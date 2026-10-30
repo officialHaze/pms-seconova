@@ -1,59 +1,63 @@
 <div align="center">
 <h1 align="center">
     <a href="https://worklenz.com" target="_blank" rel="noopener noreferrer">
-        <img src="https://seconova-my.sharepoint.com/:i:/g/personal/developer_seconova_ai/IQDBLVvYIVgxQY7u5PZ5wS2BAbtjl8gQehJqWI40QqIuG-Y?e=x4Zkby" alt="Worklenz Logo" width="400">
+        <img src="https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png" alt="Seconova Logo" width="400">
     </a>
 </h1>
 <h3 align="center">All-in-one open-source project management for efficient teams</h3>
 
-<p align="center">
-    <a href="https://github.com/Worklenz/worklenz/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License">
-    </a>
-    <a href="https://github.com/Worklenz/worklenz/releases">
-        <img src="https://img.shields.io/github/v/release/Worklenz/worklenz" alt="Release">
-    </a>
-    <a href="https://github.com/Worklenz/worklenz/stargazers">
-        <img src="https://img.shields.io/github/stars/Worklenz/worklenz" alt="Stars">
-    </a>
-    <a href="https://github.com/Worklenz/worklenz/network/members">
-        <img src="https://img.shields.io/github/forks/Worklenz/worklenz" alt="Forks">
-    </a>
-    <a href="https://github.com/Worklenz/worklenz/issues">
-        <img src="https://img.shields.io/github/issues/Worklenz/worklenz" alt="Issues">
-    </a>
-    <a href="https://discord.com/invite/6Qmm839mgr">
-        <img src="https://img.shields.io/discord/1202616582757556276?style=flat&logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord">
-    </a>
-</p>
+<!-- <p align="center"> -->
+<!--     <a href="https://github.com/Worklenz/worklenz/blob/main/LICENSE"> -->
+<!--         <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"> -->
+<!--     </a> -->
+<!--     <a href="https://github.com/Worklenz/worklenz/releases"> -->
+<!--         <img src="https://img.shields.io/github/v/release/Worklenz/worklenz" alt="Release"> -->
+<!--     </a> -->
+<!--     <a href="https://github.com/Worklenz/worklenz/stargazers"> -->
+<!--         <img src="https://img.shields.io/github/stars/Worklenz/worklenz" alt="Stars"> -->
+<!--     </a> -->
+<!--     <a href="https://github.com/Worklenz/worklenz/network/members"> -->
+<!--         <img src="https://img.shields.io/github/forks/Worklenz/worklenz" alt="Forks"> -->
+<!--     </a> -->
+<!--     <a href="https://github.com/Worklenz/worklenz/issues"> -->
+<!--         <img src="https://img.shields.io/github/issues/Worklenz/worklenz" alt="Issues"> -->
+<!--     </a> -->
+<!--     <a href="https://discord.com/invite/6Qmm839mgr"> -->
+<!--         <img src="https://img.shields.io/discord/1202616582757556276?style=flat&logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord"> -->
+<!--     </a> -->
+<!-- </p> -->
 
-<p align="center">
-    <a href="https://worklenz.com"><b>Website</b></a> •
-    <a href="https://app.worklenz.com/auth/signup"><b>Sign in</b></a> •
-    <a href="https://docs.worklenz.com/en/start/introduction/"><b>Documentation</b></a>
-</p>
+<!-- <p align="center"> -->
+<!--     <a href="https://worklenz.com"><b>Website</b></a> • -->
+<!--     <a href="https://app.worklenz.com/auth/signup"><b>Sign in</b></a> • -->
+<!--     <a href="https://docs.worklenz.com/en/start/introduction/"><b>Documentation</b></a> -->
+<!-- </p> -->
 
 </div>
 
 ---
-Meet [Worklenz](https://worklenz.com), a powerful, open-source project management platform built to help teams plan smarter, collaborate better, and ship faster. No bloated tools. No unnecessary complexity. Just everything your team needs, in one place. 🚀
-> Worklenz is growing every day. Your bug reports, feature ideas, and feedback shape what we build next. Jump into [Discord](https://discord.com/invite/6Qmm839mgr) or open a GitHub issue - we read everything!
 
+<!-- Meet [Worklenz](https://worklenz.com), a powerful, open-source project management platform built to help teams plan smarter, collaborate better, and ship faster. No bloated tools. No unnecessary complexity. Just everything your team needs, in one place. 🚀 -->
+<!---->
+<!-- > Worklenz is growing every day. Your bug reports, feature ideas, and feedback shape what we build next. Jump into [Discord](https://discord.com/invite/6Qmm839mgr) or open a GitHub issue - we read everything! -->
 
 ## 🚀 Getting Started
 
 Pick the setup that works best for you:
 <br>
+
 ### ☁️ Worklenz Cloud
+
 The fastest way to get started - no setup, no infrastructure. Just sign up at [worklenz.com](https://worklenz.com) and start managing projects in minutes.
 
 ### 🖥️ Self-Host Worklenz
+
 Prefer full control over your data? Run Worklenz on your own server.
 
-| Method | Guide |
-|--------|-------|
+| Method                  | Guide                                     |
+| ----------------------- | ----------------------------------------- |
 | 🐳 Docker (Recommended) | [Quick Docker Setup](#quick-start-docker) |
-| 🔧 Manual Installation | [Manual Dev Setup](#manual-installation) |
+| 🔧 Manual Installation  | [Manual Dev Setup](#manual-installation)  |
 
 <br>
 
@@ -71,7 +75,7 @@ Prefer full control over your data? Run Worklenz on your own server.
 - **🤝 Team Collaboration** - Comment on tasks, share files, and keep all communication in context - right where the work is.
 - **📅 Planner** - Schedule and visualize project timelines across a cross-project view, with team-wide member utilization at a glance.
 - **🔄 Import & Export** - Import tasks from a CSV file and export entire projects to CSV for easy data portability.
-<br><br>
+  <br><br>
 
 ## 📸 Screenshots
 
@@ -117,14 +121,14 @@ _**Client Portal**_
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
-| Layer | Technology |
-|-------|-----------|
-| **Frontend** | React + Ant Design |
-| **Backend** | TypeScript + Express.js |
-| **Database** | PostgreSQL |
-| **Storage** | SeaweedFS (S3-compatible) / AWS S3 / Azure Blob |
-| **Cache** | Redis |
-| **Proxy** | Nginx |
+| Layer        | Technology                                      |
+| ------------ | ----------------------------------------------- |
+| **Frontend** | React + Ant Design                              |
+| **Backend**  | TypeScript + Express.js                         |
+| **Database** | PostgreSQL                                      |
+| **Storage**  | SeaweedFS (S3-compatible) / AWS S3 / Azure Blob |
+| **Cache**    | Redis                                           |
+| **Proxy**    | Nginx                                           |
 
 ### Requirements
 
@@ -132,24 +136,26 @@ _**Client Portal**_
 - PostgreSQL version v15 or newer
 - Docker and Docker Compose (for containerized setup)
 
-
 ## 📝 Documentation
 
 Explore Worklenz's [product documentation](https://docs.worklenz.com/en/start/introduction/) to learn about features, setup, and usage and more.
 <br>
 
 <a id="quick-start-docker"></a>
+
 ### 🐳 Quick Start (Docker — Recommended)
 
 The fastest way to get Worklenz running locally with all dependencies included. This setup includes **production-ready features** like nginx reverse proxy, SSL/TLS support, Redis caching, and automated backups.
 
 **📋 Prerequisites:**
+
 - Docker and Docker Compose installed on your system
 - Git
 
 **🪜 Steps:**
 
 #### Option 1: Automated Setup (Easiest)
+
 ```bash
 # 📥 Clone the repository
 git clone https://github.com/Worklenz/worklenz.git
@@ -160,12 +166,14 @@ cd worklenz
 ```
 
 This script will:
+
 - ✅ Create `.env` file with auto-generated security secrets
 - ✅ Configure URLs based on your domain (localhost or production)
 - ✅ Set up SSL certificates (self-signed for localhost, Let's Encrypt for production)
 - ✅ Install and start all services
 
 #### Option 2: Manual Setup
+
 ```bash
 # 📥 Clone the repository
 git clone https://github.com/Worklenz/worklenz.git
@@ -180,10 +188,12 @@ docker compose up -d
 ```
 
 **🌐 Access the application:**
+
 - **Application**: https://localhost (or http://localhost)
 - **SeaweedFS S3 API**: http://localhost:8333
 
 **🛠️ Management:**
+
 ```bash
 # Use the management script for common operations
 ./manage.sh status    # View service status
@@ -198,12 +208,14 @@ docker compose up -d
 **Video Guide**: For a visual walkthrough of the local Docker deployment process, check out our [step-by-step video guide](https://www.youtube.com/watch?v=AfwAKxJbqLg).
 
 <a id="manual-installation"></a>
+
 ### 🛠️ Manual Installation (For Development)
 
 Use this path to run the services individually, either for development or on a
 server that does not use Docker.
 
 **📋 Prerequisites:**
+
 - Node.js (version 22.12.0 or higher)
 - PostgreSQL (version 15 or higher)
 - An S3-compatible storage service (SeaweedFS is bundled) or Azure Blob Storage
@@ -211,6 +223,7 @@ server that does not use Docker.
 **🪜 Steps:**
 
 1. 📥 Clone the repository:
+
 ```bash
 # Open a terminal and navigate to the directory where you want to clone Worklenz.
 cd /path/to/your/projects
@@ -221,6 +234,7 @@ git switch main
 ```
 
 2. ⚙️ Set up environment variables:
+
 ```bash
 cp worklenz-backend/.env.template worklenz-backend/.env
 # Update the environment variables with your configuration
@@ -250,6 +264,7 @@ Use `SMTP_SECURE=true` for an implicit-TLS SMTP service (normally port 465).
 For submission with STARTTLS, use port 587 and leave it `false`.
 
 3. 📦 Install dependencies:
+
 ```bash
 # Backend dependencies
 cd worklenz-backend
@@ -261,6 +276,7 @@ npm install
 ```
 
 4. 🗄️ Set up the database:
+
 ```bash
 # Create a PostgreSQL database named worklenz_db
 cd worklenz-backend
@@ -280,6 +296,7 @@ npm run migrate:up
 ```
 
 5. ▶️ Start the development servers:
+
 ```bash
 # Backend (builds, watches, and auto-restarts)
 cd worklenz-backend
@@ -356,6 +373,7 @@ cd worklenz
 #### 🔧 Manual Production Setup
 
 1. **Configure environment for your domain:**
+
    ```bash
    cp .env.example .env
    # Edit .env and set:
@@ -370,6 +388,7 @@ cd worklenz
 2. **Point your domain's DNS A record to your server IP**
 
 3. **Start services with SSL:**
+
    ```bash
    docker compose up -d
    ```
@@ -390,6 +409,7 @@ cd worklenz
 #### 🗂️ Deployment Modes
 
 - 🟢 **Express Mode** (default): All services bundled (PostgreSQL, Redis, SeaweedFS)
+
   ```bash
   docker compose up -d
   ```
@@ -508,18 +528,21 @@ Found a security vulnerability? Please **do not** open a public issue. Email us 
 Worklenz uses Google Analytics, Mixpanel, and Microsoft Clarity to understand how the application is used - helping us prioritize improvements and make smarter product decisions.
 
 **What we track:**
+
 - 📊 Usage statistics
 - 🗺️ Page views and navigation patterns
 - 🧩 Feature usage
 - 💻 Browser and device information
 
 **Privacy and consent:**
+
 - 🍪 Microsoft Clarity loads only after consent. The cookie banner's "Reject All" / "Accept" choice is stored in your browser's local storage and applies to Clarity only.
 - 📈 Google Analytics (always) and Mixpanel (when `VITE_MIXPANEL_TOKEN` is set) are initialized without waiting for that choice, so declining the banner does **not** disable them.
 - 🔎 Analytics data may include identifiers such as cookies, IP-derived location, and device details. Data is handled according to the providers' policies, including [Google's Privacy Policy](https://policies.google.com/privacy).
 <br/>
 
 ## 🤝 Contributing
+
 We love contributions from the community! Here's how you can help:
 
 - 🐛 [Report bugs](https://github.com/Worklenz/worklenz/issues/new)
@@ -531,12 +554,14 @@ Please read [CONTRIBUTING.md](https://github.com/Worklenz/worklenz/blob/main/CON
 <br>
 
 ## Contributors
+
 Thanks to everyone who has contributed to Worklenz! 💙
 
 [![Contributors](https://contrib.rocks/image?repo=Worklenz/worklenz)](https://github.com/Worklenz/worklenz/graphs/contributors)
 <br>
 
 ## 💙 Community
+
 Join the Worklenz community:
 
 - 💬 [Discord Server](https://discord.gg/6Qmm839mgr) - chat with contributors and users
@@ -554,6 +579,7 @@ By contributing to Worklenz, you agree your contributions will be licensed under
 <br>
 
 ---
+
 <br>
 <div align="center">
   <strong>Built with 💙 by the Worklenz team and amazing contributors around the world.</strong>
