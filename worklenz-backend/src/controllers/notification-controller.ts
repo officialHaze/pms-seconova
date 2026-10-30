@@ -75,8 +75,8 @@ export default class NotificationController extends WorklenzControllerBase {
       // A stored url (Client Portal notifications) opens its own item; every other notification
       // keeps the project link with the task / comment params.
       const hasOwnUrl = typeof item.url === "string" && item.url.length > 0;
-      item.url = hasOwnUrl ? item.url : item.project_id ? `/worklenz/projects/${item.project_id}` : null;
-      item.params = hasOwnUrl ? {} : { task: item.task_id, tab: "tasks-list", from: "notification" };
+      item.url = hasOwnUrl ? item.url : item.project_id ? `/worklenz/projects/${item.project_id}?tab=updates&pinned_tab=` : null;
+      item.params = hasOwnUrl ? {} : { task: item.task_id, tab: "updates", from: "notification" };
       if (!hasOwnUrl && item.comment_id) {
         item.params.comment = item.comment_id;
       }
