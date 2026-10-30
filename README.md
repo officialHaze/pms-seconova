@@ -46,9 +46,9 @@
 Pick the setup that works best for you:
 <br>
 
-### ☁️ Worklenz Cloud
-
-The fastest way to get started - no setup, no infrastructure. Just sign up at [worklenz.com](https://worklenz.com) and start managing projects in minutes.
+<!-- ### ☁️ Worklenz Cloud -->
+<!---->
+<!-- The fastest way to get started - no setup, no infrastructure. Just sign up at [worklenz.com](https://worklenz.com) and start managing projects in minutes. -->
 
 ### 🖥️ Self-Host Worklenz
 
