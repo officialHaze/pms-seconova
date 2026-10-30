@@ -50,7 +50,7 @@ Pick the setup that works best for you:
 <!---->
 <!-- The fastest way to get started - no setup, no infrastructure. Just sign up at [worklenz.com](https://worklenz.com) and start managing projects in minutes. -->
 
-### 🖥️ Self-Host Worklenz
+### 🖥️ Self-Host
 
 Prefer full control over your data? Run Worklenz on your own server.
 

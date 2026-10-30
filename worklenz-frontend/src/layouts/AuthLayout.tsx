@@ -47,7 +47,7 @@ const AuthLayout = () => {
             position: 'fixed',
             top: 24,
             left: 28,
-            height: 28,
+            height: 45,
             width: 'auto',
             zIndex: 2,
           }}

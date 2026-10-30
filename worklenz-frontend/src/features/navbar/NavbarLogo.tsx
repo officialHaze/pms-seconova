@@ -67,9 +67,9 @@ const NavbarLogo = () => {
           src={logoSrc}
           alt={t('logoAlt')}
           style={{
-            height: logoHeight,
-            maxHeight: 44,
-            maxWidth: 140,
+            height: 45,
+            maxHeight: 45,
+            maxWidth: 180,
             display: 'block',
             marginBottom: isChristmasSeason && !organization?.logo_url ? 12 : 0,
             objectFit: 'contain',

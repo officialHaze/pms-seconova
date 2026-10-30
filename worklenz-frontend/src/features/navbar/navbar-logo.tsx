@@ -18,7 +18,7 @@ const NavbarLogo = () => {
         <img
           src={themeMode === 'dark' ? logoDark : logo}
           alt={t('logoAlt')}
-          style={{ width: '100%', maxWidth: 140 }}
+          style={{ height: '55px', maxHeight: '100px', width: '100%', maxWidth: 200 }}
         />
       </div>
     </Link>

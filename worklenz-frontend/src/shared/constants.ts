@@ -10,13 +10,13 @@ import { DatePresetKey, getDatePresetRange } from '@/utils/date-presets';
 
 // logos
 export const LOGO_LIGHT =
-  'https://s3.us-west-2.amazonaws.com/worklenz.com/assets/worklenz-light-mode.png';
+  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
 export const LOGO_DARK =
-  'https://s3.us-west-2.amazonaws.com/worklenz.com/assets/worklenz-dark-mode.png';
+  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
 export const XMAS_LOGO_LIGHT =
-  'https://s3.us-west-2.amazonaws.com/worklenz.com/assets/worklenz-xmas-light.webp';
+  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
 export const XMAS_LOGO_DARK =
-  'https://s3.us-west-2.amazonaws.com/worklenz.com/assets/worklenz-xmas-dark.webp';
+  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
 
 export const avatarNamesMap: { [x: string]: string } = {
   A: '#154c9b',
