@@ -10,11 +10,11 @@ import { DatePresetKey, getDatePresetRange } from '@/utils/date-presets';
 
 // logos
 export const LOGO_LIGHT =
-  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
+  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793612885/logo-1779888390748-40070765-dark-mode.png';
 export const LOGO_DARK =
   'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
 export const XMAS_LOGO_LIGHT =
-  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
+  'https://res.cloudinary.com/wbk7fal0/image/upload/v1793612885/logo-1779888390748-40070765-dark-mode.png';
 export const XMAS_LOGO_DARK =
   'https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png';
 
