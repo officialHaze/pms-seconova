@@ -13,12 +13,12 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         // get organization working days
         const getDataq = `SELECT organization_id, array_agg(initcap(day)) AS working_days
                         FROM (
-                            SELECT organization_id, 
+                            SELECT organization_id,
                                   unnest(ARRAY['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']) AS day,
                                   unnest(ARRAY[monday, tuesday, wednesday, thursday, friday, saturday, sunday]) AS is_working
                             FROM public.organization_working_days
                             WHERE organization_id IN (
-                                SELECT id FROM organizations 
+                                SELECT id FROM organizations
                                 WHERE user_id = $1
                             )
                         ) t
@@ -82,13 +82,13 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                 INSERT INTO public.organization_working_days (
                     organization_id, monday, tuesday, wednesday, thursday, friday, saturday, sunday, created_at, updated_at
                 )
-                SELECT 
+                SELECT
                     org.id, ${valuesClause}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
                 FROM organizations org
                 WHERE org.user_id = $1
-                ON CONFLICT (organization_id) 
-                DO UPDATE SET 
-                    ${setClause}, 
+                ON CONFLICT (organization_id)
+                DO UPDATE SET
+                    ${setClause},
                     updated_at = CURRENT_TIMESTAMP;`;
 
             await db.query(upsertWorkingDaysQuery, [req.user?.owner_id]);
@@ -104,7 +104,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
 
         } catch (error: any) {
             console.error('Error updating schedule settings:', error);
-            
+
             // Handle specific database errors
             if (error.code === '23503') { // Foreign key violation
                 return res.status(400).send(new ServerResponse(false, null, "Invalid organization or user reference"));
@@ -123,7 +123,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
     public static async getDates(req: IWorkLenzRequest, res: IWorkLenzResponse): Promise<IWorkLenzResponse> {
 
         let { date, type } = req.params;
-        
+
         // Handle date parameter - extract YYYY-MM-DD format to avoid timezone issues
         // If date comes as ISO string (e.g., '2025-12-31T18:30:00.000Z'), extract just the date part
         if (date.includes('T')) {
@@ -133,12 +133,12 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
 
         if (type === "week") {
             const getDataq = `WITH input_date AS (
-                            SELECT 
-                                $1::DATE AS given_date,  
-                                (SELECT id FROM organizations WHERE user_id=$2 LIMIT 1) AS organization_id 
+                            SELECT
+                                $1::DATE AS given_date,
+                                (SELECT id FROM organizations WHERE user_id=$2 LIMIT 1) AS organization_id
                         ),
                         week_range AS (
-                            SELECT 
+                            SELECT
                                 (given_date - (EXTRACT(DOW FROM given_date)::INT + 6) % 7)::DATE AS start_date,  -- Current week start date
                                 (given_date - (EXTRACT(DOW FROM given_date)::INT + 6) % 7 + 6)::DATE AS end_date, -- Current week end date
                                 (given_date - (EXTRACT(DOW FROM given_date)::INT + 6) % 7 + 7)::DATE AS next_week_start, -- Next week start date
@@ -150,23 +150,23 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                             FROM input_date
                         ),
                         org_working_days AS (
-                            SELECT 
+                            SELECT
                                 organization_id,
                                 monday, tuesday, wednesday, thursday, friday, saturday, sunday
                             FROM organization_working_days
                             WHERE organization_id = (SELECT organization_id FROM week_range)
                         ),
                         days AS (
-                            SELECT 
+                            SELECT
                                 generate_series((SELECT start_date FROM week_range), (SELECT next_week_end FROM week_range), '1 day'::INTERVAL)::DATE AS date
                         ),
                         formatted_days AS (
-                            SELECT 
+                            SELECT
                                 d.date,
                                 TO_CHAR(d.date, 'Dy') AS day_name,
                                 EXTRACT(DAY FROM d.date) AS day,
                                 TO_CHAR(d.date, 'Mon YYYY') AS month,  -- Each day has its correct month
-                                CASE 
+                                CASE
                                     WHEN EXTRACT(DOW FROM d.date) = 0 THEN (SELECT sunday FROM org_working_days)
                                     WHEN EXTRACT(DOW FROM d.date) = 1 THEN (SELECT monday FROM org_working_days)
                                     WHEN EXTRACT(DOW FROM d.date) = 2 THEN (SELECT tuesday FROM org_working_days)
@@ -179,7 +179,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                             FROM days d
                         ),
                         grouped_by_month AS (
-                            SELECT 
+                            SELECT
                                 month AS month_name,
                                 jsonb_agg(
                                     jsonb_build_object(
@@ -212,34 +212,34 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         } else if (type === "month") {
 
             const getDataq = `WITH params AS (
-                            SELECT 
+                            SELECT
                                 DATE_TRUNC('month', $1::DATE)::DATE AS start_date,  -- First day of the month
                                 (DATE_TRUNC('month', $1::DATE) + INTERVAL '1 month' - INTERVAL '1 day')::DATE AS end_date,  -- Last day of the month
                                 CURRENT_DATE::DATE AS today,
                                 (SELECT id FROM organizations WHERE user_id = $2 LIMIT 1) AS org_id
                         ),
                         days AS (
-                            SELECT 
+                            SELECT
                                 generate_series(
-                                    (SELECT start_date FROM params), 
-                                    (SELECT end_date FROM params), 
+                                    (SELECT start_date FROM params),
+                                    (SELECT end_date FROM params),
                                     '1 day'::INTERVAL
                                 )::DATE AS date
                         ),
                         org_working_days AS (
-                            SELECT 
+                            SELECT
                                 monday, tuesday, wednesday, thursday, friday, saturday, sunday
                             FROM organization_working_days
                             WHERE organization_id = (SELECT org_id FROM params)
                             LIMIT 1
                         ),
                         formatted_days AS (
-                            SELECT 
+                            SELECT
                                 d.date,
                                 TO_CHAR(d.date, 'Dy') AS day_name,
                                 EXTRACT(DAY FROM d.date) AS day,
                                 -- Dynamically check if the day is a weekend based on the organization's settings
-                                CASE 
+                                CASE
                                     WHEN EXTRACT(DOW FROM d.date) = 0 THEN NOT (SELECT sunday FROM org_working_days)
                                     WHEN EXTRACT(DOW FROM d.date) = 1 THEN NOT (SELECT monday FROM org_working_days)
                                     WHEN EXTRACT(DOW FROM d.date) = 2 THEN NOT (SELECT tuesday FROM org_working_days)
@@ -252,7 +252,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                             FROM days d
                         ),
                         grouped_by_month AS (
-                            SELECT 
+                            SELECT
                                 TO_CHAR(date, 'Mon YYYY') AS month_name,
                                 jsonb_agg(
                                     jsonb_build_object(
@@ -293,7 +293,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         const getDataq = `
             WITH member_projects AS (
                 -- Get all projects for each member with their allocations
-                SELECT 
+                SELECT
                     pm.team_member_id,
                     jsonb_agg(
                         jsonb_build_object(
@@ -317,15 +317,15 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                 WHERE p.id NOT IN (SELECT project_id FROM archived_projects)
                 GROUP BY pm.team_member_id
             )
-            SELECT DISTINCT ON (users.email) 
+            SELECT DISTINCT ON (users.email)
                 team_members.id AS team_member_id,
-                users.id AS id, 
-                users.name AS name, 
+                users.id AS id,
+                users.name AS name,
                 users.email AS email,
                 users.avatar_url AS avatar_url,
                 COALESCE(mp.projects, '[]'::JSONB) AS projects
-            FROM team_members 
-            INNER JOIN users ON users.id = team_members.user_id 
+            FROM team_members
+            INNER JOIN users ON users.id = team_members.user_id
             LEFT JOIN member_projects mp ON mp.team_member_id = team_members.id
             WHERE team_members.team_id = (
                 SELECT active_team FROM users WHERE id = $1
@@ -409,7 +409,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
             ),
             -- Find continuous date segments (only merge truly overlapping dates, not adjacent ones)
             ordered_ranges AS (
-                SELECT 
+                SELECT
                     project_id,
                     start_date,
                     end_date,
@@ -419,12 +419,12 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
             ),
             -- Detect gaps: a new segment starts when there's a gap from the previous end date
             segments_with_gaps AS (
-                SELECT 
+                SELECT
                     project_id,
                     start_date,
                     end_date,
                     hours_per_day,
-                    CASE 
+                    CASE
                         WHEN LAG(end_date) OVER (PARTITION BY project_id ORDER BY start_date) IS NULL THEN 1
                         WHEN start_date > LAG(end_date) OVER (PARTITION BY project_id ORDER BY start_date) + INTERVAL '1 day' THEN 1
                         ELSE 0
@@ -433,7 +433,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
             ),
             -- Assign segment numbers based on gaps
             segments_numbered AS (
-                SELECT 
+                SELECT
                     project_id,
                     start_date,
                     end_date,
@@ -443,7 +443,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
             ),
             -- Merge overlapping/adjacent dates within each segment
             continuous_segments AS (
-                SELECT 
+                SELECT
                     project_id,
                     segment_id,
                     MIN(start_date) AS segment_start,
@@ -474,12 +474,12 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                     ) AS task_count,
                     -- Calculate total hours for this segment
                     (
-                        SELECT COUNT(*) 
+                        SELECT COUNT(*)
                         FROM generate_series(cs.segment_start, cs.segment_end, '1 day'::interval) AS day
                         JOIN public.organization_working_days owd ON owd.organization_id = (
                             SELECT organization_id FROM member_project_list WHERE project_id = cs.project_id LIMIT 1
                         )
-                        WHERE 
+                        WHERE
                             (EXTRACT(ISODOW FROM day) = 1 AND owd.monday = true) OR
                             (EXTRACT(ISODOW FROM day) = 2 AND owd.tuesday = true) OR
                             (EXTRACT(ISODOW FROM day) = 3 AND owd.wednesday = true) OR
@@ -504,7 +504,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                     COALESCE(sws.hours_per_day, 0) AS hours_per_day,
                     COALESCE(sws.total_hours, 0) AS total_hours,
                     COALESCE(sws.task_count, 0) AS task_count,
-                    CASE 
+                    CASE
                         WHEN sws.segment_start IS NOT NULL THEN
                             ROW_NUMBER() OVER (PARTITION BY mpl.project_id ORDER BY sws.segment_start)
                         ELSE 1
@@ -526,19 +526,19 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                     apd.end_date,
                     apd.segment_number,
                     -- Calculate offset from the chart_start date
-                    CASE 
+                    CASE
                         WHEN apd.start_date IS NOT NULL THEN
                             (DATE_PART('day', apd.start_date - $2::DATE)) * 75
                         ELSE NULL
                     END AS indicator_offset,
-                    CASE 
+                    CASE
                         WHEN apd.start_date IS NOT NULL AND apd.end_date IS NOT NULL THEN
                             (DATE_PART('day', apd.end_date - apd.start_date) + 1) * 75
                         ELSE NULL
                     END AS indicator_width,
                     75 AS min_width
                 FROM all_projects_with_segments apd
-                ORDER BY 
+                ORDER BY
                     apd.project_name,
                     apd.segment_number
             )
@@ -572,9 +572,9 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         `;
 
         const results = await db.query(getDataq, [id, chartStart, chartEnd || null]);
-        
+
         const [data] = results.rows;
-        
+
         return res.status(200).send(new ServerResponse(true, { projects: data?.projects || [], id }));
 
     }
@@ -588,20 +588,20 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         const toFormat = moment(allocated_to).format("YYYY-MM-DD");
 
         const getDataq1 = `
-                            SELECT id 
-                            FROM project_member_allocations 
-                            WHERE project_id = $1 
-                            AND team_member_id = $2 
+                            SELECT id
+                            FROM project_member_allocations
+                            WHERE project_id = $1
+                            AND team_member_id = $2
                             AND (
                                 -- Case 1: The given range starts inside an existing range
-                                ($3 BETWEEN allocated_from AND allocated_to) 
-                                OR 
+                                ($3 BETWEEN allocated_from AND allocated_to)
+                                OR
                                 -- Case 2: The given range ends inside an existing range
-                                ($4 BETWEEN allocated_from AND allocated_to) 
-                                OR 
+                                ($4 BETWEEN allocated_from AND allocated_to)
+                                OR
                                 -- Case 3: The given range fully covers an existing range
                                 (allocated_from BETWEEN $3 AND $4 AND allocated_to BETWEEN $3 AND $4)
-                                OR 
+                                OR
                                 -- Case 4: The existing range fully covers the given range
                                 (allocated_from <= $3 AND allocated_to >= $4)
                             );`;
@@ -635,7 +635,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         // Get organization ID
         const orgQuery = `SELECT id FROM organizations WHERE user_id = $1 LIMIT 1`;
         const orgResult = await db.query(orgQuery, [req.user?.owner_id]);
-        
+
         if (orgResult.rows.length === 0) {
             return res.status(404).send(new ServerResponse(false, null, "Organization not found"));
         }
@@ -645,7 +645,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         // Build query parameters
         const queryParams: any[] = [startDate, endDate, memberId, organizationId];
         let projectFilter = '';
-        
+
         if (projectId) {
             queryParams.push(projectId);
             projectFilter = 'AND t.project_id = $5';
@@ -654,7 +654,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         // Main query to get allocated and logged hours
         const summaryQuery = `
             WITH date_range AS (
-                SELECT 
+                SELECT
                     $1::DATE AS start_date,
                     $2::DATE AS end_date,
                     $3::UUID AS team_member_id,
@@ -662,7 +662,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
             ),
             -- Get allocated hours from task estimations (total_minutes)
             allocated_hours AS (
-                SELECT 
+                SELECT
                     COALESCE(SUM(t.total_minutes / 60.0), 0) AS total_allocated
                 FROM date_range dr
                 LEFT JOIN tasks t ON t.archived = FALSE
@@ -676,7 +676,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
             ),
             -- Get logged hours from work logs for tasks scheduled within date range
             logged_hours AS (
-                SELECT 
+                SELECT
                     COALESCE(SUM(twl.time_spent), 0) AS total_logged_seconds,
                     COALESCE(SUM(CASE WHEN t.billable = true THEN twl.time_spent ELSE 0 END), 0) AS logged_billable_seconds,
                     COALESCE(SUM(CASE WHEN t.billable = false OR t.billable IS NULL THEN twl.time_spent ELSE 0 END), 0) AS logged_non_billable_seconds
@@ -696,7 +696,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
                 LEFT JOIN teams te ON te.id = p.team_id
                 WHERE te.organization_id = dr.organization_id OR t.id IS NULL
             )
-            SELECT 
+            SELECT
                 ah.total_allocated AS allocated_hours,
                 lh.total_logged_seconds,
                 lh.logged_billable_seconds,
@@ -705,7 +705,7 @@ export default class ScheduleControllerV2 extends WorklenzControllerBase {
         `;
 
         const result = await db.query(summaryQuery, queryParams);
-        
+
         const summary = result.rows[0] || {
             allocated_hours: 0,
             total_logged_seconds: 0,
