@@ -136,11 +136,11 @@ export const REPORTING_NAV_SURFACE: NavSurface = {
           label: { i18nNs: 'reporting-sidebar', i18nKey: 'overview', defaultValue: 'Overview' },
           icon: <DashboardOutlined />,
         },
-        {
-          key: 'projects',
-          label: { i18nNs: 'reporting-sidebar', i18nKey: 'projects', defaultValue: 'Projects' },
-          icon: <AppstoreOutlined />,
-        },
+        // {
+        //   key: 'projects',
+        //   label: { i18nNs: 'reporting-sidebar', i18nKey: 'projects', defaultValue: 'Projects' },
+        //   icon: <AppstoreOutlined />,
+        // },
         {
           key: 'members',
           label: { i18nNs: 'reporting-sidebar', i18nKey: 'members', defaultValue: 'Members' },

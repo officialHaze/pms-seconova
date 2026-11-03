@@ -328,7 +328,7 @@ export async function sendEmailEnhanced(email: IEmail): Promise<IEmailResult> {
     console.log("Subject:", options.subject);
 
     const charset = "UTF-8";
-    
+
     // Generate plain text version by stripping HTML tags. Use sanitize-html
     // (drops <script>/<style> and their contents reliably) then decode entities
     // so the plaintext body reads naturally.
@@ -337,7 +337,7 @@ export async function sendEmailEnhanced(email: IEmail): Promise<IEmailResult> {
     )
       .replace(/\s+/g, ' ')
       .trim();
-    
+
     if (provider === "smtp") {
       const response = await createSmtpTransport().sendMail({
         from,

@@ -5,16 +5,26 @@ import { ServerResponse } from "../models/server-response";
 import WorklenzControllerBase from "./worklenz-controller-base";
 import HandleExceptions from "../decorators/handle-exceptions";
 import whatsNewService from "../services/whats-new/whats-new.service";
+import { ICurrentRelease } from "../interfaces/whats-new";
 
 export default class WhatsNewController extends WorklenzControllerBase {
 
   @HandleExceptions()
   public static async getCurrent(req: IWorkLenzRequest, res: IWorkLenzResponse): Promise<IWorkLenzResponse> {
-    const [release] = await Promise.all([
-      whatsNewService.getCurrentReleaseForUser(req.user?.id as string),
-      whatsNewService.ensureNotificationsForEligibleReleases(req.user?.id, req.user?.team_id),
-    ]);
-    return res.status(200).send(new ServerResponse(true, release));
+    // const [release] = await Promise.all([
+    //   whatsNewService.getCurrentReleaseForUser(req.user?.id as string),
+    //   whatsNewService.ensureNotificationsForEligibleReleases(req.user?.id, req.user?.team_id),
+    // ]);
+
+    const customRelease: ICurrentRelease = {
+      id: "2026-PMS-SECONOVA",
+      title: "Custom Release",
+      body_markdown: "unknown",
+      published_at: "unknown",
+      changelog_url: null,
+      preview_text: "unknown"
+    }
+    return res.status(200).send(new ServerResponse(true, customRelease));
   }
 
   @HandleExceptions()

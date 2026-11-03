@@ -11,7 +11,7 @@ import { reserveInvitationEmail } from "../services/security-policy.service";
 const _rawFrontendUrl = process.env.FRONTEND_URL || "worklenz.com";
 const FRONTEND_URL = (_rawFrontendUrl.startsWith("http") ? _rawFrontendUrl : `https://${_rawFrontendUrl}`).replace(/\/+$/, "");
 
-const DEFAULT_LOGO_URL = "https://s3.us-west-2.amazonaws.com/worklenz.com/email-templates-assets/worklenz-light-mode.png";
+const DEFAULT_LOGO_URL = "https://res.cloudinary.com/wbk7fal0/image/upload/v1793612885/logo-1779888390748-40070765-dark-mode.png";
 
 /**
  * Validates that a URL is a safe http/https URL for use in email templates.
@@ -31,7 +31,7 @@ function safeLogoUrl(url: string): string {
 
 /**
  * Fetches the organization branding logo URL for a given team.
- * Falls back to the default Worklenz logo if no custom logo is set.
+ * Falls back to the default Seconova logo if no custom logo is set.
  */
 async function getOrganizationLogoUrl(teamId: string): Promise<string> {
   try {
@@ -61,7 +61,7 @@ export function sendWelcomeEmail(email: string, name: string) {
 
   sendEmail({
     to: [email],
-    subject: "Welcome to Worklenz.",
+    subject: "Welcome to Seconova.",
     html: content
   });
 }
@@ -73,7 +73,7 @@ export function sendNewSubscriberNotification(subscriberEmail: string) {
   content = content.replace("[VAR_EMAIL]", sanitize(subscriberEmail));
 
   sendEmail({
-    subject: "Worklenz - New Subscriber.",
+    subject: "Seconova - New Subscriber.",
     html: content
   });
 }
@@ -96,7 +96,7 @@ export async function sendJoinTeamInvitation(myName: string, teamName: string, t
 
   sendEmail({
     to: [toEmail],
-    subject: `${sanitizePlainText(myName)} has invited you to work with ${sanitizePlainText(teamName)} in Worklenz`,
+    subject: `${sanitizePlainText(myName)} has invited you to work with ${sanitizePlainText(teamName)} in Seconova`,
     html: content
   });
 }
@@ -121,7 +121,7 @@ export async function sendRegisterAndJoinTeamInvitation(myName: string, userName
 
   sendEmail({
     to: [toEmail],
-    subject: `${sanitizePlainText(myName)} has invited you to work with ${sanitizePlainText(teamName)} in Worklenz`,
+    subject: `${sanitizePlainText(myName)} has invited you to work with ${sanitizePlainText(teamName)} in Seconova`,
     html: content
   });
 }
@@ -138,7 +138,7 @@ export async function sendResetEmail(toEmail: string, user_id: string, hash: str
 
   await sendEmail({
     to: [toEmail],
-    subject: "Set or reset your password on Worklenz.",
+    subject: "Set or reset your password on Seconova.",
     html: content
   });
 }
@@ -150,7 +150,7 @@ export function sendResetSuccessEmail(toEmail: string) {
 
   sendEmail({
     to: [toEmail],
-    subject: "Your Worklenz password was updated.",
+    subject: "Your Seconova password was updated.",
     html: content
   });
 }
@@ -187,7 +187,7 @@ export async function sendClientPortalResetEmail(toEmail: string, user_id: strin
 
 // * This implementation should be improved
 export async function sendInvitationEmail(isNewMember: boolean, user: IPassportSession, userNameOrId: string, email: string, userId: string, userName?: string, projectId?: string) {
-  await reserveInvitationEmail(user.team_id);
+  // await reserveInvitationEmail(user.team_id);
   if (isNewMember) {
     // userNameOrId = userName
     await sendJoinTeamInvitation(user?.name as string, user?.team_name as string, user.team_id as string, userNameOrId, email, userId, projectId);
