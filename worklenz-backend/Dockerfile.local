@@ -1,0 +1,21 @@
+FROM node:22-slim
+
+ARG RELEASE_VERSION
+RUN apt-get update && apt-get install -y \
+    python3 \
+    make \
+    g++ \
+    curl \
+    postgresql-server-dev-all \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /backend
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

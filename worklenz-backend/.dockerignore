@@ -6,4 +6,4 @@ coverage
 .git
 *.md
 tests
-
+.env

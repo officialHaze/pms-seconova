@@ -1,9 +1,19 @@
 const Holidays = require("date-holidays");
 const { Pool } = require("pg");
 const config = require("../build/config/db-config").default;
+require("dotenv").config()
 
 // Database connection
-const pool = new Pool(config);
+const pool = new Pool({
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    max: process.env.DB_MAX_CLIENTS,
+    connectionTimeoutMillis: +(process.env.DB_CONNECTION_TIMEOUT_MS || "10000"),
+    idleTimeoutMillis: 30000,
+});
 
 // Countries to populate with holidays
 const countries = [
@@ -203,37 +213,37 @@ const countries = [
 
 async function populateHolidays() {
   const client = await pool.connect();
-  
+
   try {
     console.log("Starting holiday population...");
-    
+
     for (const country of countries) {
       console.log(`Processing ${country.name} (${country.code})...`);
-      
+
       try {
         const hd = new Holidays(country.code);
-        
+
         // Get holidays for multiple years (2020-2030)
         for (let year = 2020; year <= 2030; year++) {
           const holidays = hd.getHolidays(year);
-          
+
           for (const holiday of holidays) {
             // Skip if holiday is not a date object
             if (!holiday.date || typeof holiday.date !== "object") {
               continue;
             }
-            
+
             const dateStr = holiday.date.toISOString().split("T")[0];
             const name = holiday.name || "Unknown Holiday";
             const description = holiday.type || "Public Holiday";
-            
+
             // Insert holiday into database
             const query = `
               INSERT INTO country_holidays (country_code, name, description, date, is_recurring)
               VALUES ($1, $2, $3, $4, $5)
               ON CONFLICT (country_code, name, date) DO NOTHING
             `;
-            
+
             await client.query(query, [
               country.code,
               name,
@@ -243,16 +253,16 @@ async function populateHolidays() {
             ]);
           }
         }
-        
+
         console.log(`✓ Completed ${country.name}`);
-        
+
       } catch (error) {
         console.log(`✗ Error processing ${country.name}: ${error.message}`);
       }
     }
-    
+
     console.log("Holiday population completed!");
-    
+
   } catch (error) {
     console.error("Database error:", error);
   } finally {
@@ -262,4 +272,4 @@ async function populateHolidays() {
 }
 
 // Run the script
-populateHolidays().catch(console.error); 
+populateHolidays().catch(console.error);
