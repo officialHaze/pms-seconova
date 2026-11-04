@@ -28,7 +28,7 @@ const downloadSampleCsv = () => {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'worklenz-sample-import.csv';
+  link.download = 'secteams-sample-import.csv';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -263,7 +263,7 @@ export const CsvSetupStepsContent: React.FC<CsvSetupStepsContentProps> = ({
       <div style={{ display: 'flex', flexDirection: 'row', gap: 48, minHeight: 420 }}>
         <div style={{ flex: 1, maxWidth: 420 }}>
           <Typography.Title level={3} style={{ color: themeToken.colorText, marginBottom: 8 }}>
-            {t('importStep.setupProjectTitle', { defaultValue: 'Set up a project in Worklenz' })}
+            {t('importStep.setupProjectTitle', { defaultValue: 'Set up a project in Secteams' })}
           </Typography.Title>
           <Typography.Paragraph style={{ color: themeToken.colorTextSecondary, marginBottom: 16 }}>
             {t('importStep.setupProjectDesc', {

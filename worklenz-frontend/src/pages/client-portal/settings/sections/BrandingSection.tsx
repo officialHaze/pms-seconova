@@ -227,11 +227,11 @@ export const BrandingSection: React.FC<BrandingSectionProps> = ({
           <Flex align="center" justify="space-between" gap={16}>
             <div>
               <div id="show-powered-by-label" style={{ fontSize: 13, fontWeight: 600 }}>
-                {t('poweredByLabel', { defaultValue: 'Show "Powered by Worklenz"' })}
+                {t('poweredByLabel', { defaultValue: 'Show "Powered by Secteams"' })}
               </div>
               <Typography.Text type="secondary" style={{ fontSize: 12 }}>
                 {t('poweredByDescription', {
-                  defaultValue: 'Display a "Powered by Worklenz" note at the bottom right of the client portal.',
+                  defaultValue: 'Display a "Powered by Secteams" note at the bottom right of the client portal.',
                 })}
               </Typography.Text>
             </div>
@@ -318,7 +318,7 @@ export const BrandingSection: React.FC<BrandingSectionProps> = ({
                 color: isDarkPreview ? 'rgba(255,255,255,0.45)' : 'rgba(0,0,0,0.45)',
               }}
             >
-              {t('poweredByPreview', { defaultValue: 'Powered by Worklenz' })}
+              {t('poweredByPreview', { defaultValue: 'Powered by Secteams' })}
             </div>
           )}
         </div>

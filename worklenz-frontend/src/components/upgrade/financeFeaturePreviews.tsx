@@ -66,7 +66,7 @@ export const useFinanceFeaturePreviews = (): Record<string, FinanceFeaturePrevie
       title: t('invoices', { ns: 'finance-sidebar', defaultValue: 'Invoices' }),
       description: t('cards.finance.invoices.description', {
         ns: 'upgrade-preview',
-        defaultValue: 'Generate, send, and track client invoices without leaving Worklenz.',
+        defaultValue: 'Generate, send, and track client invoices without leaving Secteams.',
       }),
       features: t('cards.finance.invoices.features', { ns: 'upgrade-preview', returnObjects: true, defaultValue: [] }) as string[],
       mockup: <InvoicesPreviewMockup />,

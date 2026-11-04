@@ -366,7 +366,7 @@ self.addEventListener('push', event => {
     },
   };
 
-  event.waitUntil(self.registration.showNotification('Worklenz', options));
+  event.waitUntil(self.registration.showNotification('Secteams', options));
 });
 
 // Handle notification click events

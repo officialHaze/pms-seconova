@@ -163,7 +163,7 @@ export const TasksTab = ({ project }: TasksTabProps) => {
       </Flex>
       <Typography.Paragraph type="secondary" style={{ fontSize: 12.5 }}>
         {t('tasks.intro', {
-          defaultValue: 'Tasks are managed in WorkLenz as usual. Every task is Internal Only until you share it.',
+          defaultValue: 'Tasks are managed in Secteams as usual. Every task is Internal Only until you share it.',
         })}
       </Typography.Paragraph>
 

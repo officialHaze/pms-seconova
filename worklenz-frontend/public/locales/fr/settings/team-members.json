@@ -239,7 +239,7 @@
   "inviteLinkGeneratedCopyFailed": "Lien d'invitation généré, mais n'a pas pu être copié automatiquement. Veuillez le copier manuellement.",
   "noManagedProjectsFound": "Aucun projet pour lequel vous êtes chef de projet",
   "projectInvite_guestLimitExceeded": "Limite d'invités dépassée pour ce plan. Veuillez mettre à niveau pour ajouter plus d'invités.",
-  "license-expired-subtitle": "Votre abonnement Worklenz est terminé. Veuillez renouveler votre abonnement pour continuer à profiter de toutes les fonctionnalités.",
+  "license-expired-subtitle": "Votre abonnement Secteams est terminé. Veuillez renouveler votre abonnement pour continuer à profiter de toutes les fonctionnalités.",
   "Failed to fetch job titles": "Échec de la récupération des titres de poste",
   "assign_team_lead": "Désigner un chef d'équipe"
 }

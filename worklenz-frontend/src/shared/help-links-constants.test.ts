@@ -36,9 +36,9 @@ describe('help-links-constants', () => {
     const mailto = new URL(helpLinks.WORKLENZ_SUPPORT_MAILTO_URL);
 
     it('should be a mailto: link to the support address', () => {
-      expect(helpLinks.WORKLENZ_SUPPORT_EMAIL).toBe('support@worklenz.com');
+      expect(helpLinks.WORKLENZ_SUPPORT_EMAIL).toBe('developer@seconova.ai');
       expect(mailto.protocol).toBe('mailto:');
-      expect(mailto.pathname).toBe('support@worklenz.com');
+      expect(mailto.pathname).toBe('developer@seconova.ai');
     });
 
     it('should prefill the subject', () => {
@@ -48,7 +48,7 @@ describe('help-links-constants', () => {
 
     it('should encode spaces as %20, which mail apps read literally (unlike "+")', () => {
       expect(helpLinks.WORKLENZ_SUPPORT_MAILTO_URL).toBe(
-        'mailto:support@worklenz.com?subject=Worklenz%20support%20request'
+        'mailto:developer@seconova.ai?subject=Secteams%20support%20request'
       );
       expect(helpLinks.WORKLENZ_SUPPORT_MAILTO_URL).not.toContain('+');
     });

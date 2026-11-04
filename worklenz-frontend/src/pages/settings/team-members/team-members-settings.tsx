@@ -1036,7 +1036,7 @@ const TeamMembersSettings = () => {
                     isInviteRestricted
                       ? tCommon('license-expired-subtitle', {
                           defaultValue:
-                            'Your Worklenz subscription has ended. Please renew to continue enjoying all features.',
+                            'Your Secteams subscription has ended. Please renew to continue enjoying all features.',
                         })
                       : ''
                   }

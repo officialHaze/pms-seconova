@@ -17,7 +17,7 @@
     "selectNotificationsPlaceholder": "Select notification types...",
     "refresh": "Refresh",
     "addButton": "Add Integration",
-    "inviteBotTip": "Tip: Make sure to invite @Worklenz bot to your Slack channel first!"
+    "inviteBotTip": "Tip: Make sure to invite @Secteams bot to your Slack channel first!"
   },
   "teams": {
     "title": "Microsoft Teams",

@@ -35,14 +35,14 @@ export const SurveySettingsCard: React.FC = () => {
           <Result
             icon={<CheckCircleOutlined style={{ color: '#52c41a' }} />}
             title="Survey Completed"
-            subTitle="Thank you for completing the personalization survey. Your responses help us improve Worklenz."
+            subTitle="Thank you for completing the personalization survey. Your responses help us improve Secteams."
             extra={<Button onClick={() => setShowModal(true)}>Update Your Responses</Button>}
           />
         ) : (
           <>
             <Alert
               message="Help us personalize your experience"
-              description="Take a quick survey to tell us about your organization and how you use Worklenz."
+              description="Take a quick survey to tell us about your organization and how you use Secteams."
               type="info"
               showIcon
               style={{ marginBottom: 16 }}

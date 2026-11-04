@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "Factures",
-        "description": "Générez, envoyez et suivez les factures des clients sans quitter Worklenz.",
+        "description": "Générez, envoyez et suivez les factures des clients sans quitter Secteams.",
         "features": [
           "Créez des factures à partir du temps et des dépenses suivis",
           "Suivez les factures payées, en attente et en retard",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "Factures",
-        "description": "Créez, envoyez et suivez les factures des clients sans quitter Worklenz.",
+        "description": "Créez, envoyez et suivez les factures des clients sans quitter Secteams.",
         "features": [
           "Créez des factures à partir du temps et des dépenses suivis",
           "Suivez les factures payées, en attente et en retard",

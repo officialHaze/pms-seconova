@@ -240,6 +240,6 @@
   "inviteLinkGeneratedCopyFailed": "Der Einladungslink wurde generiert, konnte aber nicht automatisch kopiert werden. Bitte kopieren Sie es manuell.",
   "noManagedProjectsFound": "Keine Projekte, bei denen Sie Projektmanager sind",
   "projectInvite_guestLimitExceeded": "Das Gästelimit für diesen Plan wurde überschritten. Bitte aktualisieren Sie, um weitere Gäste hinzuzufügen.",
-  "license-expired-subtitle": "Ihr Worklenz-Abonnement ist beendet. Bitte erneuern Sie es, um alle Funktionen weiterhin zu nutzen.",
+  "license-expired-subtitle": "Ihr Secteams-Abonnement ist beendet. Bitte erneuern Sie es, um alle Funktionen weiterhin zu nutzen.",
   "Failed to fetch job titles": "Fehler beim Abrufen der Jobtitel"
 }

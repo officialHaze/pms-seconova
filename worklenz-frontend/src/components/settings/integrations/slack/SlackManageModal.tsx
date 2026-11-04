@@ -54,11 +54,11 @@ export function SlackManageModal({
             <p className="text-sm text-amber-800 dark:text-amber-300 mb-2">
               {t('instructions.inviteBot.description', {
                 defaultValue:
-                  'Before you can receive notifications in a Slack channel, you must invite the Worklenz bot to that channel.',
+                  'Before you can receive notifications in a Slack channel, you must invite the Secteams bot to that channel.',
               })}
             </p>
             <code className="bg-amber-100 dark:bg-amber-900/40 px-2 py-1 rounded text-xs font-mono text-amber-900 dark:text-amber-200">
-              /invite @Worklenz
+              /invite @Secteams
             </code>
             <p className="text-xs text-amber-700 dark:text-amber-400 mt-2 mb-0">
               {t('instructions.inviteBot.note', {

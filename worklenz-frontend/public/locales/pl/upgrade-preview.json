@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "Faktury",
-        "description": "Generuj, wysyłaj i śledź faktury klientów bez opuszczania Worklenz.",
+        "description": "Generuj, wysyłaj i śledź faktury klientów bez opuszczania Secteams.",
         "features": [
           "Twórz faktury na podstawie śledzonego czasu i wydatków",
           "Śledź zapłacone, oczekujące i zaległe faktury",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "Faktury",
-        "description": "Twórz, wysyłaj i śledź faktury klientów bez opuszczania Worklenz.",
+        "description": "Twórz, wysyłaj i śledź faktury klientów bez opuszczania Secteams.",
         "features": [
           "Twórz faktury na podstawie śledzonego czasu i wydatków",
           "Śledź zapłacone, oczekujące i zaległe faktury",

@@ -69,7 +69,7 @@ export const CsvReviewStepContent: React.FC<CsvReviewStepContentProps> = ({
           defaultValue: 'Section values are mapped to statuses and may require manual refinement.',
         }),
         t('importStep.limitationsAsanaLikes', {
-          defaultValue: 'Likes are imported as field values; reactions do not create social activity in Worklenz.',
+          defaultValue: 'Likes are imported as field values; reactions do not create social activity in Secteams.',
         }),
         t('importStep.limitationsAsanaUsers', {
           defaultValue: 'Users who are not added to the team remain unresolved in assignee and reporter mappings.',
@@ -85,7 +85,7 @@ export const CsvReviewStepContent: React.FC<CsvReviewStepContentProps> = ({
         defaultValue: 'Date parsing uses detected formats and may need manual field/status adjustments after import.',
       }),
       t('importStep.limitationsCsvUsers', {
-        defaultValue: 'User references without valid emails stay unassigned until users are matched in Worklenz.',
+        defaultValue: 'User references without valid emails stay unassigned until users are matched in Secteams.',
       }),
     ];
   }, [providerKey, t]);
@@ -118,7 +118,7 @@ export const CsvReviewStepContent: React.FC<CsvReviewStepContentProps> = ({
       <Typography.Paragraph style={{ color: themeToken.colorTextSecondary, marginBottom: 24 }}>
         {t('importStep.reviewSpaceDetailsHelp', {
           defaultValue:
-            "We're ready to import your team's data. Here's a summary of what will be imported into Worklenz.",
+            "We're ready to import your team's data. Here's a summary of what will be imported into Secteams.",
         })}
       </Typography.Paragraph>
       <div
@@ -142,7 +142,7 @@ export const CsvReviewStepContent: React.FC<CsvReviewStepContentProps> = ({
             </div>
             <div style={{ color: themeToken.colorTextSecondary, fontSize: 15 }}>
               {t('importStep.reviewProjectCardDescription', {
-                defaultValue: 'A new Worklenz project will be created for this import.',
+                defaultValue: 'A new Secteams project will be created for this import.',
               })}
             </div>
           </div>
@@ -162,7 +162,7 @@ export const CsvReviewStepContent: React.FC<CsvReviewStepContentProps> = ({
             </div>
             <div style={{ color: themeToken.colorTextSecondary, fontSize: 15 }}>
               {t('importStep.reviewFieldsCardDescription', {
-                defaultValue: '{{mapped}} columns will be mapped to existing Worklenz fields.',
+                defaultValue: '{{mapped}} columns will be mapped to existing Secteams fields.',
                 mapped: mappedFields,
               })}
             </div>
@@ -183,7 +183,7 @@ export const CsvReviewStepContent: React.FC<CsvReviewStepContentProps> = ({
             <div style={{ color: themeToken.colorTextSecondary, fontSize: 15 }}>
               {t('importStep.reviewWorkTypesCardDescription', {
                 defaultValue:
-                  'If values are not mapped to Worklenz statuses, all tasks are mapped to Task (level 0) by default.',
+                  'If values are not mapped to Secteams statuses, all tasks are mapped to Task (level 0) by default.',
               })}
             </div>
           </div>

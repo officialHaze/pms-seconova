@@ -42,7 +42,7 @@ const ALLOWED_SOURCE_VALUES = new Set([
   'Google Drive',
   'Google Calendar',
   'Twitter',
-  'Worklenz',
+  'Secteams',
   // Technical Jira hostname placeholder; keep the valid domain in every language.
   'yourcompany.atlassian.net',
   'Deutsch',

@@ -286,7 +286,7 @@ const ProjectInvitePage: React.FC = () => {
     >
       <div className="invite-header">
         <div className="invite-logo">
-          <img src={isDarkMode ? logoDark : logo} alt="Worklenz" style={{ height: 26 }} />
+          <img src={isDarkMode ? logoDark : logo} alt="Secteams" style={{ height: 26 }} />
         </div>
       </div>
 

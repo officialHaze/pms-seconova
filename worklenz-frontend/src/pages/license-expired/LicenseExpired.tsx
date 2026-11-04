@@ -471,7 +471,7 @@ const iconCircleBorder = isDark ? 'rgba(24,144,255,0.4)'  : '#91caff';
       <div style={{ marginTop: 20, textAlign: 'center' }}>
         <Text style={{ fontSize: 13, color: footerColor }}>
           {t('need-help') || 'Need help?'}{' '}
-          <a href="mailto:support@worklenz.com" style={{ color: footerLinkColor, textDecoration: 'none' }}>
+          <a href="mailto:developer@seconova.ai" style={{ color: footerLinkColor, textDecoration: 'none' }}>
             {t('contact-support') || 'Contact support'}
           </a>
           {' '}{t('or') || 'or'}{' '}

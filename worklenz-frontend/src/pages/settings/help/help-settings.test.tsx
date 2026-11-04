@@ -220,8 +220,8 @@ describe('HelpSettings', () => {
       const link = screen.getByRole('link', { name: 'Email support (opens your email app)' });
 
       expect(link).toHaveAttribute('href', helpLinks.WORKLENZ_SUPPORT_MAILTO_URL);
-      expect(link.getAttribute('href')).toContain('mailto:support@worklenz.com');
-      expect(link.getAttribute('href')).toContain('subject=Worklenz%20support%20request');
+      expect(link.getAttribute('href')).toContain('mailto:developer@seconova.ai');
+      expect(link.getAttribute('href')).toContain('subject=Secteams%20support%20request');
     });
 
     it('should hand off to the mail app instead of opening a tab', () => {

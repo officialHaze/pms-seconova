@@ -17,7 +17,7 @@
     "selectNotificationsPlaceholder": "选择通知类型...",
     "refresh": "刷新",
     "addButton": "添加集成",
-    "inviteBotTip": "提示：请确保首先邀请 @Worklenz 机器人到您的 Slack 频道！"
+    "inviteBotTip": "提示：请确保首先邀请 @Secteams 机器人到您的 Slack 频道！"
   },
   "teams": {
     "title": "微软团队",

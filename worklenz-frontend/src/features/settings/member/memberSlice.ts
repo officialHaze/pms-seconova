@@ -17,8 +17,8 @@ type MemberState = {
 const initialState: MemberState = {
   owner: {
     memberId: nanoid(),
-    memberName: 'Sachintha Prasad',
-    memberEmail: 'prasadsachintha1231@gmail.com',
+    memberName: 'Seconova Developer',
+    memberEmail: 'developer@seconova.ai',
     memberRole: 'owner',
     isActivate: true,
     isInivitationAccept: true,

@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "Invoices",
-        "description": "Generate, send, and track client invoices without leaving Worklenz.",
+        "description": "Generate, send, and track client invoices without leaving Secteams.",
         "features": [
           "Create invoices from tracked time & expenses",
           "Track paid, pending & overdue invoices",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "Invoices",
-        "description": "Create, send, and track client invoices without leaving Worklenz.",
+        "description": "Create, send, and track client invoices without leaving Secteams.",
         "features": [
           "Create invoices from tracked time & expenses",
           "Track paid, pending & overdue invoices",

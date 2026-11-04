@@ -240,6 +240,6 @@
   "inviteLinkGeneratedCopyFailed": "Link de convite gerado, mas não pôde ser copiado automaticamente. Por favor, copie-o manualmente.",
   "noManagedProjectsFound": "Nenhum projeto onde você é Gerente de Projeto",
   "projectInvite_guestLimitExceeded": "Limite de convidados excedido para este plano. Faça upgrade para adicionar mais hóspedes.",
-  "license-expired-subtitle": "Seu período de teste do Worklenz terminou. Por favor, atualize para continuar aproveitando todos os recursos.",
+  "license-expired-subtitle": "Seu período de teste do Secteams terminou. Por favor, atualize para continuar aproveitando todos os recursos.",
   "Failed to fetch job titles": "Falha ao buscar cargos"
 }

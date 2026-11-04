@@ -95,14 +95,14 @@ GLOSSARY = {
         "pl": "Pro",
         "fr": "Pro",
     },
-    "Worklenz": {
-        "alb": "Worklenz",
-        "de": "Worklenz",
-        "es": "Worklenz",
-        "pt": "Worklenz",
-        "zh": "Worklenz",
-        "pl": "Worklenz",
-        "fr": "Worklenz",
+    "Secteams": {
+        "alb": "Secteams",
+        "de": "Secteams",
+        "es": "Secteams",
+        "pt": "Secteams",
+        "zh": "Secteams",
+        "pl": "Secteams",
+        "fr": "Secteams",
     },
     "Phase Color": {
         "alb": "Ngjyra e Fazës",
@@ -118,7 +118,7 @@ GLOSSARY = {
 KEEP_AS_IS = {
     "*", "KB", "MB", "GB", "TB", "/month", "/year", "/page", "% Used", "Total $", "UTIL",
     "Slack", "Microsoft Teams", "Teams", "GitHub", "LinkedIn", "Google", "Apple", "Excel",
-    "YouTube", "Discord", "Facebook", "Google Drive", "Google Calendar", "Twitter", "Worklenz",
+    "YouTube", "Discord", "Facebook", "Google Drive", "Google Calendar", "Twitter", "Secteams",
     "URL", "ID", "Pro", "AppSumo Special", "Deutsch", "Español", "Português", "Shqip", "简体中文", "English"
 }
 UNTRANSLATED_ALLOWLIST = {
@@ -126,7 +126,7 @@ UNTRANSLATED_ALLOWLIST = {
     "KB", "MB", "GB", "TB", "URL", "ID", "Pro", "AppSumo Special",
     "Slack", "Microsoft Teams", "Teams", "GitHub", "LinkedIn", "Google",
     "Apple", "Excel", "YouTube", "Discord", "Facebook", "Google Drive",
-    "Google Calendar", "Twitter", "Worklenz",
+    "Google Calendar", "Twitter", "Secteams",
     "Deutsch", "Español", "Português", "Shqip", "简体中文", "English",
     "Status", "Total", "Normal", "Email", "No", "Name", "Phase", "Actions",
     "Client", "Import", "Export", "Filter", "Marketing", "Plan", "Menu",

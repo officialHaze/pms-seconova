@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "发票",
-        "description": "无需离开 Worklenz 即可生成、发送和跟踪客户发票。",
+        "description": "无需离开 Secteams 即可生成、发送和跟踪客户发票。",
         "features": [
           "根据跟踪的时间和费用创建发票",
           "跟踪已付、待处理和逾期发票",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "发票",
-        "description": "无需离开 Worklenz 即可创建、发送和跟踪客户发票。",
+        "description": "无需离开 Secteams 即可创建、发送和跟踪客户发票。",
         "features": [
           "根据跟踪的时间和费用创建发票",
           "跟踪已付、待处理和逾期发票",

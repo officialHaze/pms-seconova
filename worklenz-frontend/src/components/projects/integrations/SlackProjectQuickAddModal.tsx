@@ -249,7 +249,7 @@ export const SlackProjectQuickAddModal: React.FC<SlackProjectQuickAddModalProps>
             <Text style={{ fontSize: '12px' }}>
               💡{' '}
               {t('slack.inviteBotTip', {
-                defaultValue: 'Tip: Make sure to invite @Worklenz bot to your Slack channel first!',
+                defaultValue: 'Tip: Make sure to invite @Secteams bot to your Slack channel first!',
               })}
             </Text>
           }

@@ -91,7 +91,7 @@ const NotificationDrawer = () => {
 
   const createPush = (message: string, title: string, teamId: string | null, url?: string) => {
     if (Notification.permission === 'granted' && showBrowserPush) {
-      const img = 'https://worklenz.com/assets/icons/icon-128x128.png';
+      const img = '/logobrowserTab.png';
       const notification = new Notification(title, {
         body: stripHtmlTags(message),
         icon: img,
@@ -123,7 +123,7 @@ const NotificationDrawer = () => {
     dispatch(fetchUnreadCount()); // Fetch updated unread count
 
     if (isPushEnabled()) {
-      const title = notification.team ? `${notification.team} | Worklenz` : 'Worklenz';
+      const title = notification.team ? `${notification.team} | Secteams` : 'Secteams';
       let url = notification.url;
       if (url && notification.params && Object.keys(notification.params).length) {
         const q = toQueryString(notification.params);
@@ -151,7 +151,7 @@ const NotificationDrawer = () => {
     if (isPushEnabled()) {
       createPush(
         notification.message,
-        notification.team || 'Worklenz',
+        notification.team || 'Secteams',
         notification.team_id || null
       );
     }
@@ -183,7 +183,7 @@ const NotificationDrawer = () => {
     };
 
     if (isPushEnabled()) {
-      createPush(notification.message, 'Worklenz', notification.team_id || null);
+      createPush(notification.message, 'Secteams', notification.team_id || null);
     }
 
     showNotification(notification);

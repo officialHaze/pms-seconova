@@ -18,12 +18,12 @@
     "title": "Instrukcje konfiguracji",
     "step1": {
       "title": "1. Połącz swoje miejsce pracy",
-      "description": "Kliknij przycisk „Połącz Slack Workspace” poniżej, aby autoryzować Worklenz na dostęp do Twojego obszaru roboczego Slack."
+      "description": "Kliknij przycisk „Połącz Slack Workspace” poniżej, aby autoryzować Secteams na dostęp do Twojego obszaru roboczego Slack."
     },
     "step2": {
       "title": "2. Zaproś bota do kanałów",
       "description": "W każdym kanale Slack, na którym chcesz otrzymywać powiadomienia, wpisz:",
-      "command": "/zaproś @Worklenz",
+      "command": "/zaproś @Secteams",
       "note": "Należy to zrobić tylko raz na kanał."
     },
     "step3": {
@@ -34,8 +34,8 @@
   "instructions": {
     "inviteBot": {
       "title": "Nie zapomnij zaprosić bota!",
-      "description": "Zanim będziesz mógł otrzymywać powiadomienia na kanale Slack, musisz zaprosić bota Worklenz do tego kanału.",
-      "step": "Na swoim kanale Slack wpisz: <code>/invite @Worklenz</code>",
+      "description": "Zanim będziesz mógł otrzymywać powiadomienia na kanale Slack, musisz zaprosić bota Secteams do tego kanału.",
+      "step": "Na swoim kanale Slack wpisz: <code>/invite @Secteams</code>",
       "note": "Należy to zrobić tylko raz na kanał."
     },
     "getStarted": "Zacznij od dodania konfiguracji kanału, aby otrzymywać powiadomienia ze swoich projektów."
@@ -52,7 +52,7 @@
   },
   "notConnected": {
     "title": "Połącz swój obszar roboczy Slack",
-    "description": "Zintegruj Slack ze swoim zespołem Worklenz, aby otrzymywać powiadomienia w czasie rzeczywistym, tworzyć zadania w Slacku i synchronizować swój zespół na obu platformach."
+    "description": "Zintegruj Slack ze swoim zespołem Secteams, aby otrzymywać powiadomienia w czasie rzeczywistym, tworzyć zadania w Slacku i synchronizować swój zespół na obu platformach."
   },
   "upgradeRequired": "Przejdź na plan biznesowy",
   "features": {
@@ -66,7 +66,7 @@
     },
     "collaboration": {
       "title": "Współpraca zespołowa",
-      "description": "Synchronizuj cały zespół w Worklenz i Slack"
+      "description": "Synchronizuj cały zespół w Secteams i Slack"
     }
   },
   "table": {

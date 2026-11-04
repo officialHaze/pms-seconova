@@ -282,7 +282,7 @@ const UpgradePlansLKR: React.FC = () => {
     if (valid) {
       await initializeDirectPayCheckout(planKey);
     } else {
-      window.open('mailto:sales@worklenz.com', '_blank');
+      window.open('mailto:developer@seconova.ai', '_blank');
     }
     setCheckoutPlan(null);
   };

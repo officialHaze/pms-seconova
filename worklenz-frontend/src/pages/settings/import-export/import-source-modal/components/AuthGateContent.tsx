@@ -199,7 +199,7 @@ export const AuthGateContent: React.FC<AuthGateContentProps> = props => {
         <Typography.Paragraph style={{ color: themeToken.colorTextSecondary, marginBottom: 16 }}>
           {t(
             'auth.mondayBody',
-            'Paste a personal access token to let Worklenz fetch boards and items for import.'
+            'Paste a personal access token to let Secteams fetch boards and items for import.'
           )}
         </Typography.Paragraph>
         <Input.Password
@@ -233,7 +233,7 @@ export const AuthGateContent: React.FC<AuthGateContentProps> = props => {
         <Typography.Paragraph style={{ color: themeToken.colorTextSecondary, marginBottom: 16 }}>
           {t(
             'auth.trelloBody',
-            'Enter your Trello API key and token so Worklenz can fetch your boards.'
+            'Enter your Trello API key and token so Secteams can fetch your boards.'
           )}
         </Typography.Paragraph>
         <Input

@@ -479,7 +479,7 @@ const TasksList: React.FC<TasksListProps> = React.memo(({ cardTitle }) => {
               // while the new tab response is still in-flight
               <div style={{ minHeight: MIN_BODY_HEIGHT - 60, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <EmptyListPlaceholder
-                imageSrc="https://s3.us-west-2.amazonaws.com/worklenz.com/assets/empty-box.webp"
+                imageSrc="/assets/images/empty-box.webp"
                 text={
                   isPinnedTab
                     ? t('tasks.noPinnedTasks', {

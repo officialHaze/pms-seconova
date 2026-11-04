@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "Rechnungen",
-        "description": "Erstellen, versenden und verfolgen Sie Kundenrechnungen, ohne Worklenz zu verlassen.",
+        "description": "Erstellen, versenden und verfolgen Sie Kundenrechnungen, ohne Secteams zu verlassen.",
         "features": [
           "Erstellen Sie Rechnungen aus erfasster Zeit und Ausgaben",
           "Verfolgen Sie bezahlte, ausstehende und überfällige Rechnungen",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "Rechnungen",
-        "description": "Erstellen, versenden und verfolgen Sie Kundenrechnungen, ohne Worklenz zu verlassen.",
+        "description": "Erstellen, versenden und verfolgen Sie Kundenrechnungen, ohne Secteams zu verlassen.",
         "features": [
           "Erstellen Sie Rechnungen aus erfasster Zeit und Ausgaben",
           "Verfolgen Sie bezahlte, ausstehende und überfällige Rechnungen",

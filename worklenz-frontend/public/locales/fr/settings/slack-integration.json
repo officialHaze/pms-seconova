@@ -18,12 +18,12 @@
     "title": "Instructions de configuration",
     "step1": {
       "title": "1. Connectez votre espace de travail",
-      "description": "Cliquez sur le bouton « Connecter l'espace de travail Slack » ci-dessous pour autoriser Worklenz à accéder à votre espace de travail Slack."
+      "description": "Cliquez sur le bouton « Connecter l'espace de travail Slack » ci-dessous pour autoriser Secteams à accéder à votre espace de travail Slack."
     },
     "step2": {
       "title": "2. Invitez le bot sur les chaînes",
       "description": "Dans chaque chaîne Slack sur laquelle vous souhaitez recevoir des notifications, saisissez :",
-      "command": "/inviter @Worklenz",
+      "command": "/inviter @Secteams",
       "note": "Vous ne devez le faire qu'une seule fois par canal."
     },
     "step3": {
@@ -34,8 +34,8 @@
   "instructions": {
     "inviteBot": {
       "title": "N'oubliez pas d'inviter le bot !",
-      "description": "Avant de pouvoir recevoir des notifications dans un canal Slack, vous devez inviter le robot Worklenz sur ce canal.",
-      "step": "Dans votre chaîne Slack, tapez : <code>/invite @Worklenz</code>",
+      "description": "Avant de pouvoir recevoir des notifications dans un canal Slack, vous devez inviter le robot Secteams sur ce canal.",
+      "step": "Dans votre chaîne Slack, tapez : <code>/invite @Secteams</code>",
       "note": "Cela ne doit être fait qu’une seule fois par canal."
     },
     "getStarted": "Commencez par ajouter une configuration de canal pour recevoir des notifications de vos projets."
@@ -52,7 +52,7 @@
   },
   "notConnected": {
     "title": "Connectez votre espace de travail Slack",
-    "description": "Intégrez Slack à votre équipe Worklenz pour recevoir des notifications en temps réel, créer des tâches depuis Slack et garder votre équipe synchronisée sur les deux plateformes."
+    "description": "Intégrez Slack à votre équipe Secteams pour recevoir des notifications en temps réel, créer des tâches depuis Slack et garder votre équipe synchronisée sur les deux plateformes."
   },
   "upgradeRequired": "Passer au plan Business",
   "features": {
@@ -66,7 +66,7 @@
     },
     "collaboration": {
       "title": "Collaboration en équipe",
-      "description": "Gardez toute votre équipe synchronisée sur Worklenz et Slack"
+      "description": "Gardez toute votre équipe synchronisée sur Secteams et Slack"
     }
   },
   "table": {

@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "Faturas",
-        "description": "Gere, envie e rastreie faturas de clientes sem sair do Worklenz.",
+        "description": "Gere, envie e rastreie faturas de clientes sem sair do Secteams.",
         "features": [
           "Crie faturas a partir de tempo e despesas rastreadas",
           "Acompanhe faturas pagas, pendentes e vencidas",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "Faturas",
-        "description": "Crie, envie e rastreie faturas de clientes sem sair da Worklenz.",
+        "description": "Crie, envie e rastreie faturas de clientes sem sair da Secteams.",
         "features": [
           "Crie faturas a partir de tempo e despesas rastreadas",
           "Acompanhe faturas pagas, pendentes e vencidas",
