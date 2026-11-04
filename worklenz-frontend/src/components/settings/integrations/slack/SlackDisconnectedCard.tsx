@@ -43,7 +43,7 @@ export function SlackDisconnectedCard({
           <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed max-w-sm mx-auto">
             {t('notConnected.description', {
               defaultValue:
-                'Integrate Slack with your Worklenz team to receive real-time notifications, create tasks from Slack, and keep your team synchronized across both platforms.',
+                'Integrate Slack with your Secteams team to receive real-time notifications, create tasks from Slack, and keep your team synchronized across both platforms.',
             })}
           </p>
         </div>

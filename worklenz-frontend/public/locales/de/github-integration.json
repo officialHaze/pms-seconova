@@ -15,7 +15,7 @@
   },
   "notConfigured": {
     "title": "Nicht konfiguriert",
-    "description": "Die GitHub-App wurde für diese Worklenz-Installation nicht eingerichtet. Bitten Sie Ihren Administrator, sie zu konfigurieren."
+    "description": "Die GitHub-App wurde für diese Secteams-Installation nicht eingerichtet. Bitten Sie Ihren Administrator, sie zu konfigurieren."
   },
   "actions": {
     "retry": "Erneut versuchen",
@@ -37,7 +37,7 @@
   "errors": {
     "invalidState": "Die Verbindungsanfrage ist abgelaufen. Bitte versuchen Sie es erneut.",
     "forbidden": "Sie benötigen Zugriff auf diese GitHub-Installation und müssen Team-Inhaber oder Admin sein.",
-    "alreadyConnected": "Dieses GitHub-Konto ist bereits mit einem anderen Worklenz-Team verbunden.",
+    "alreadyConnected": "Dieses GitHub-Konto ist bereits mit einem anderen Secteams-Team verbunden.",
     "teamAlreadyConnected": "Dieses Team ist bereits mit einem anderen GitHub-Konto verbunden. Trennen Sie es zuerst.",
     "connectFailed": "GitHub konnte nicht verbunden werden. Bitte versuchen Sie es erneut.",
     "loadFailed": "GitHub-Status konnte nicht geladen werden.",

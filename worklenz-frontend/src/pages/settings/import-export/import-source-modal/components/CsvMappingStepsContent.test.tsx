@@ -79,7 +79,7 @@ describe('CsvMappingStepsContent - Step 3 (Map statuses)', () => {
 
     // After clicking, modal should be opened displaying details
     expect(screen.getByText('About Mapping Statuses')).toBeInTheDocument();
-    expect(screen.getByText('1. Worklenz Status Categories')).toBeInTheDocument();
+    expect(screen.getByText('1. Secteams Status Categories')).toBeInTheDocument();
 
     // Closing the modal works
     const gotItButton = screen.getByRole('button', { name: /Got It/i });

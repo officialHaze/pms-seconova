@@ -77,7 +77,7 @@ const HELP_QUICK_LINKS: HelpQuickLink[] = [
   {
     label: 'Support Email',
     icon: <MailOutlined />,
-    onClick: () => { window.location.href = 'mailto:support@worklenz.com'; },
+    onClick: () => { window.location.href = 'mailto:developer@seconova.ai'; },
   },
   {
     label: 'Live Chat',

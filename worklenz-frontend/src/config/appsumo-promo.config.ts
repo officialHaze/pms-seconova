@@ -3,7 +3,7 @@ const DEFAULT_APPSUMO_POPUP_FREQUENCY_DAYS = 1;
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
 export const APPSUMO_POPUP_IMAGE_URL =
-  'https://s3.dualstack.us-west-2.amazonaws.com/worklenz.com/appsumo-promo/worklenz-appusumo-70-discount-promo.webp';
+  '/assets/images/worklenz-appusumo-70-discount-promo.webp';
 export const APPSUMO_DRAWER_IMAGE_URL = APPSUMO_POPUP_IMAGE_URL;
 
 /**

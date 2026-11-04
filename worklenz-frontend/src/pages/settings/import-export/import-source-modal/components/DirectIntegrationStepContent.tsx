@@ -399,7 +399,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={directContainerStyle}>
           <Typography.Title level={3} style={{ marginBottom: 8 }}>
-            {t('importStep.setupProjectTitle', { defaultValue: 'Set up a project in Worklenz' })}
+            {t('importStep.setupProjectTitle', { defaultValue: 'Set up a project in Secteams' })}
           </Typography.Title>
           <Typography.Paragraph style={{ color: themeToken.colorTextSecondary }}>
             {t('importStep.setupProjectDesc', {
@@ -481,7 +481,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
             defaultValue: 'Import all members from {{source}} project',
             source: source.label || 'source',
           }),
-          description: t('importStep.importMembersDesc', { defaultValue: 'Brings collaborators into the Worklenz project' }),
+          description: t('importStep.importMembersDesc', { defaultValue: 'Brings collaborators into the Secteams project' }),
           iconBg: '#0f9d58',
           icon: <TeamOutlined style={{ color: '#fff' }} />,
           action: undefined,
@@ -594,7 +594,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
                           defaultValue: 'Section values are mapped to statuses and may require manual refinement.',
                         }),
                         t('importStep.limitationsAsanaLikes', {
-                          defaultValue: 'Likes are imported as field values; reactions do not create social activity in Worklenz.',
+                          defaultValue: 'Likes are imported as field values; reactions do not create social activity in Secteams.',
                         }),
                         t('importStep.limitationsAsanaUsers', {
                           defaultValue: 'Users who are not added to the team remain unresolved in assignee and reporter mappings.',
@@ -605,7 +605,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
                           defaultValue: 'Field mappings may require manual adjustment after import.',
                         }),
                         t('importStep.limitationsGenericUsers', {
-                          defaultValue: 'Unmatched users remain unresolved until they are added and mapped in Worklenz.',
+                          defaultValue: 'Unmatched users remain unresolved until they are added and mapped in Secteams.',
                         }),
                         t('importStep.limitationsGenericAttachments', {
                           defaultValue: 'Attachment import depends on source permissions and provider API availability.',
@@ -679,7 +679,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
             <Typography.Paragraph style={{ marginBottom: 16, color: themeToken.colorTextSecondary }}>
               {t('importStep.hierarchyIntro', {
                 defaultValue:
-                  "How we've mapped your {{source}} data to Worklenz. More about project hierarchy in Worklenz.",
+                  "How we've mapped your {{source}} data to Secteams. More about project hierarchy in Secteams.",
                 source: source.label,
               })}
             </Typography.Paragraph>
@@ -706,7 +706,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
                   fontWeight: 700,
                 }}
               >
-                Worklenz
+                Secteams
               </span>
             </div>
 
@@ -773,7 +773,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
       const fieldMappingTitle = t('importStep.fieldMappingTitle', 'Field mapping');
       const fieldMappingDescription = t(
         'importStep.fieldMappingDescription',
-        "We've automatically mapped your {{source}} data into system and custom fields in Worklenz. You can customize some fields that have other compatible field types. More about field mapping.",
+        "We've automatically mapped your {{source}} data into system and custom fields in Secteams. You can customize some fields that have other compatible field types. More about field mapping.",
         { source: source.label || 'source' }
       );
       const panelBg = themeToken.colorBgContainer;
@@ -943,7 +943,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
                 <span style={{ paddingLeft: 2 }}>
                   {t('importStep.sourceField', { defaultValue: '{{source}} field', source: source.label || 'Source' })}
                 </span>
-                <span>{t('importStep.worklenzField', 'Worklenz field')}</span>
+                <span>{t('importStep.worklenzField', 'Secteams field')}</span>
                 <span style={{ textAlign: 'center' }}>{t('importStep.includeInImport', 'Include in import')}</span>
               </div>
 
@@ -1012,7 +1012,7 @@ export const DirectIntegrationStepContent: React.FC<DirectIntegrationStepContent
                         : []),
                       {
                         label: t('importStep.worklenzFields', {
-                          defaultValue: 'Worklenz fields',
+                          defaultValue: 'Secteams fields',
                         }),
                         options: systemOptions,
                       },

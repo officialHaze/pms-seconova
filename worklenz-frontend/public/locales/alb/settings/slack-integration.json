@@ -18,12 +18,12 @@
     "title": "Udhëzimet e Konfigurimit",
     "step1": {
       "title": "1. Lidh Hapësirën Tuaj të Punës",
-      "description": "Kliko butonin 'Lidh Hapësirën e Punës së Slack' më poshtë për të autorizuar Worklenz të hyjë në hapësirën tuaj të punës së Slack."
+      "description": "Kliko butonin 'Lidh Hapësirën e Punës së Slack' më poshtë për të autorizuar Secteams të hyjë në hapësirën tuaj të punës së Slack."
     },
     "step2": {
       "title": "2. Fto Bot-in në Kanale",
       "description": "Në çdo kanal të Slack ku dëshironi të merrni njoftime, shkruani:",
-      "command": "/fto @Worklenz",
+      "command": "/fto @Secteams",
       "note": "Ju duhet ta bëni këtë vetëm një herë për kanal."
     },
     "step3": {
@@ -34,8 +34,8 @@
   "instructions": {
     "inviteBot": {
       "title": "Mos harroni të ftoni bot-in!",
-      "description": "Para se të mund të merrni njoftime në një kanal të Slack, duhet të ftoni bot-in Worklenz në atë kanal.",
-      "step": "Në kanalin tuaj të Slack, shkruani: <code>/invite @Worklenz</code>",
+      "description": "Para se të mund të merrni njoftime në një kanal të Slack, duhet të ftoni bot-in Secteams në atë kanal.",
+      "step": "Në kanalin tuaj të Slack, shkruani: <code>/invite @Secteams</code>",
       "note": "Kjo duhet të bëhet vetëm një herë për kanal."
     },
     "getStarted": "Filloni duke shtuar një konfigurim kanali për të marrë njoftime nga projektet tuaja."
@@ -52,7 +52,7 @@
   },
   "notConnected": {
     "title": "Lidh Hapësirën Tuaj të Punës së Slack",
-    "description": "Integro Slack me ekipin tuaj të Worklenz për të marrë njoftime në kohë reale, për të krijuar detyra nga Slack, dhe për të mbajtur ekipin tuaj të sinkronizuar në të dyja platformat."
+    "description": "Integro Slack me ekipin tuaj të Secteams për të marrë njoftime në kohë reale, për të krijuar detyra nga Slack, dhe për të mbajtur ekipin tuaj të sinkronizuar në të dyja platformat."
   },
   "upgradeRequired": "Përmirëso në planin Business",
   "features": {
@@ -66,7 +66,7 @@
     },
     "collaboration": {
       "title": "Bashkëpunimi i Ekipit",
-      "description": "Mbani të gjithë ekipin tuaj të sinkronizuar në Worklenz dhe Slack"
+      "description": "Mbani të gjithë ekipin tuaj të sinkronizuar në Secteams dhe Slack"
     }
   },
   "table": {

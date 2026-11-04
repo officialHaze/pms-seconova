@@ -70,7 +70,7 @@ i18n.init({
     en: {
       'auth/login': {
         headline: 'Welcome back',
-        headerDescription: 'Log in to your Worklenz workspace.',
+        headerDescription: 'Log in to your Secteams workspace.',
         signInWithLabel: 'Sign in with',
         orText: 'or',
         emailLabel: 'Email',

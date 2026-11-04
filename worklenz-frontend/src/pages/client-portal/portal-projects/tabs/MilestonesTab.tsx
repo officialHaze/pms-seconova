@@ -255,7 +255,7 @@ export const MilestonesTab = ({ project }: MilestonesTabProps) => {
           onChange={value => void changeSource(value)}
           ariaLabel={t('milestones.sourceLabel', { defaultValue: 'Milestone source' })}
           options={[
-            { value: 'worklenz', label: t('milestones.sourceWorklenz', { defaultValue: 'WorkLenz phases' }) },
+            { value: 'worklenz', label: t('milestones.sourceWorklenz', { defaultValue: 'Secteams phases' }) },
             { value: 'manual', label: t('milestones.sourceManual', { defaultValue: 'Set manually' }) },
           ]}
         />
@@ -266,7 +266,7 @@ export const MilestonesTab = ({ project }: MilestonesTabProps) => {
           {isPhases
             ? t('milestones.phasesHint', {
                 defaultValue:
-                  'Showing this project’s WorkLenz phases with their real dates. Clients see these. Switch to Set manually to add your own milestones.',
+                  'Showing this project’s Secteams phases with their real dates. Clients see these. Switch to Set manually to add your own milestones.',
               })
             : t('milestones.summary', {
             shared: milestones.length - internalCount,
@@ -298,7 +298,7 @@ export const MilestonesTab = ({ project }: MilestonesTabProps) => {
                 description={
                   isPhases
                     ? t('milestones.emptyPhases', {
-                        defaultValue: 'This project has no dated phases yet. Add phases with dates in the WorkLenz project.',
+                        defaultValue: 'This project has no dated phases yet. Add phases with dates in the Secteams project.',
                       })
                     : t('milestones.empty', {
                         defaultValue: 'No milestones yet. Add one to show the client where the project is heading.',

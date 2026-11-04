@@ -90,7 +90,7 @@ export const MappingStatusesInfoModal: React.FC<MappingStatusesInfoModalProps> =
         >
           {t('importStep.mappingStatusesInfoIntro', {
             defaultValue:
-              'Status mapping matches the status values found in your CSV file to Worklenz workflow statuses, ensuring every imported task lands in the correct stage.',
+              'Status mapping matches the status values found in your CSV file to Secteams workflow statuses, ensuring every imported task lands in the correct stage.',
           })}
         </Typography.Paragraph>
 
@@ -98,7 +98,7 @@ export const MappingStatusesInfoModal: React.FC<MappingStatusesInfoModalProps> =
         <div style={cardStyle}>
           <Typography.Text strong style={{ color: themeToken.colorText, fontSize: 14, display: 'block', marginBottom: 6 }}>
             {t('importStep.mappingInfoCategoriesTitle', {
-              defaultValue: '1. Worklenz Status Categories',
+              defaultValue: '1. Secteams Status Categories',
             })}
           </Typography.Text>
           <Typography.Paragraph
@@ -106,7 +106,7 @@ export const MappingStatusesInfoModal: React.FC<MappingStatusesInfoModalProps> =
           >
             {t('importStep.mappingInfoCategoriesDesc', {
               defaultValue:
-                'Every task status in Worklenz belongs to one of three core workflow categories:',
+                'Every task status in Secteams belongs to one of three core workflow categories:',
             })}
           </Typography.Paragraph>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, paddingLeft: 4 }}>
@@ -158,7 +158,7 @@ export const MappingStatusesInfoModal: React.FC<MappingStatusesInfoModalProps> =
           >
             {t('importStep.mappingInfoMatchDesc', {
               defaultValue:
-                'For each unique value from your CSV Status column on the left, select the matching Worklenz project status from the dropdown on the right.',
+                'For each unique value from your CSV Status column on the left, select the matching Secteams project status from the dropdown on the right.',
             })}
           </Typography.Paragraph>
         </div>
@@ -178,7 +178,7 @@ export const MappingStatusesInfoModal: React.FC<MappingStatusesInfoModalProps> =
           >
             {t('importStep.mappingInfoCreateDesc', {
               defaultValue:
-                'If your CSV contains a status not yet in Worklenz, type the new status name into the search box to create it, then choose which category (To Do, Doing, or Done) it belongs to.',
+                'If your CSV contains a status not yet in Secteams, type the new status name into the search box to create it, then choose which category (To Do, Doing, or Done) it belongs to.',
             })}
           </Typography.Paragraph>
         </div>

@@ -178,7 +178,7 @@ export const useClientPortalFeaturePreviews = (): Record<string, ClientPortalFea
     },
     invoices: {
       title: t('title', { ns: 'client-portal-invoices', defaultValue: 'Invoices' }),
-      ...copy('invoices', 'Create, send, and track client invoices without leaving Worklenz.'),
+      ...copy('invoices', 'Create, send, and track client invoices without leaving Secteams.'),
       mockup: <ClientPortalInvoicesPreviewMockup />,
     },
     'audit-log': {

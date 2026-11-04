@@ -31,7 +31,7 @@ describe('MappingStatusesInfoModal', () => {
 
     expect(screen.getByText('About Mapping Statuses')).toBeInTheDocument();
     expect(screen.getByText(/Status mapping matches the status values found in your CSV file/i)).toBeInTheDocument();
-    expect(screen.getByText('1. Worklenz Status Categories')).toBeInTheDocument();
+    expect(screen.getByText('1. Secteams Status Categories')).toBeInTheDocument();
     expect(screen.getByText('2. Map to Existing Statuses')).toBeInTheDocument();
     expect(screen.getByText('3. Create New Custom Statuses')).toBeInTheDocument();
     expect(screen.getByText('4. Unmapped Statuses')).toBeInTheDocument();

@@ -13,7 +13,7 @@ const REASON_MESSAGES: Record<string, { key: string; defaultValue: string }> = {
   },
   already_connected: {
     key: 'errors.alreadyConnected',
-    defaultValue: 'This GitHub account is already connected to another Worklenz team.',
+    defaultValue: 'This GitHub account is already connected to another Secteams team.',
   },
   team_already_connected: {
     key: 'errors.teamAlreadyConnected',

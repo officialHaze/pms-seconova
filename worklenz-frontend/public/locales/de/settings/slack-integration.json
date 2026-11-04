@@ -18,12 +18,12 @@
     "title": "Einrichtungsanleitung",
     "step1": {
       "title": "1. Arbeitsbereich verbinden",
-      "description": "Klicken Sie auf die Schaltfläche 'Slack-Arbeitsbereich verbinden' unten, um Worklenz den Zugriff auf Ihren Slack-Arbeitsbereich zu autorisieren."
+      "description": "Klicken Sie auf die Schaltfläche 'Slack-Arbeitsbereich verbinden' unten, um Secteams den Zugriff auf Ihren Slack-Arbeitsbereich zu autorisieren."
     },
     "step2": {
       "title": "2. Bot zu Kanälen einladen",
       "description": "Geben Sie in jedem Slack-Kanal, in dem Sie Benachrichtigungen erhalten möchten, ein:",
-      "command": "/invite @Worklenz",
+      "command": "/invite @Secteams",
       "note": "Sie müssen dies nur einmal pro Kanal tun."
     },
     "step3": {
@@ -34,8 +34,8 @@
   "instructions": {
     "inviteBot": {
       "title": "Vergessen Sie nicht, den Bot einzuladen!",
-      "description": "Bevor Sie Benachrichtigungen in einem Slack-Kanal erhalten können, müssen Sie den Worklenz-Bot zu diesem Kanal einladen.",
-      "step": "Geben Sie in Ihrem Slack-Kanal ein: <code>/invite @Worklenz</code>",
+      "description": "Bevor Sie Benachrichtigungen in einem Slack-Kanal erhalten können, müssen Sie den Secteams-Bot zu diesem Kanal einladen.",
+      "step": "Geben Sie in Ihrem Slack-Kanal ein: <code>/invite @Secteams</code>",
       "note": "Dies muss nur einmal pro Kanal durchgeführt werden."
     },
     "getStarted": "Beginnen Sie, indem Sie eine Kanal-Konfiguration hinzufügen, um Benachrichtigungen von Ihren Projekten zu erhalten."
@@ -52,7 +52,7 @@
   },
   "notConnected": {
     "title": "Verbinden Sie Ihren Slack-Arbeitsbereich",
-    "description": "Integrieren Sie Slack mit Ihrem Worklenz-Team, um Echtzeit-Benachrichtigungen zu erhalten, Aufgaben aus Slack zu erstellen und Ihr Team auf beiden Plattformen synchron zu halten."
+    "description": "Integrieren Sie Slack mit Ihrem Secteams-Team, um Echtzeit-Benachrichtigungen zu erhalten, Aufgaben aus Slack zu erstellen und Ihr Team auf beiden Plattformen synchron zu halten."
   },
   "upgradeRequired": "Auf Business-Plan upgraden",
   "features": {
@@ -66,7 +66,7 @@
     },
     "collaboration": {
       "title": "Team-Zusammenarbeit",
-      "description": "Halten Sie Ihr gesamtes Team zwischen Worklenz und Slack synchron"
+      "description": "Halten Sie Ihr gesamtes Team zwischen Secteams und Slack synchron"
     }
   },
   "table": {

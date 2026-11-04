@@ -239,7 +239,7 @@
   "inviteLinkGeneratedCopyFailed": "Wygenerowano link z zaproszeniem, ale nie można go skopiować automatycznie. Skopiuj go ręcznie.",
   "noManagedProjectsFound": "Brak projektów, w których jesteś kierownikiem projektu",
   "projectInvite_guestLimitExceeded": "Przekroczono limit gości w tym planie. Uaktualnij, aby dodać więcej gości.",
-  "license-expired-subtitle": "Twoja subskrypcja Worklenz dobiegła końca. Odnów subskrypcję, aby móc nadal korzystać ze wszystkich funkcji.",
+  "license-expired-subtitle": "Twoja subskrypcja Secteams dobiegła końca. Odnów subskrypcję, aby móc nadal korzystać ze wszystkich funkcji.",
   "Failed to fetch job titles": "Nie udało się pobrać tytułów stanowisk",
   "assign_team_lead": "Przypisz lidera zespołu"
 }

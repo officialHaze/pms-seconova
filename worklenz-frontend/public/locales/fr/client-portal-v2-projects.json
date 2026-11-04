@@ -143,8 +143,8 @@
     "workspace": "Ouvrir l'espace de travail du projet"
   },
   "milestones": {
-    "emptyPhases": "Ce projet n'a pas encore de phases datées. Ajoutez des phases avec des dates dans le projet WorkLenz.",
-    "phasesHint": "Montrant les phases WorkLenz de ce projet avec leurs dates réelles. Les clients les voient. Basculez vers Définir manuellement pour ajouter vos propres jalons.",
+    "emptyPhases": "Ce projet n'a pas encore de phases datées. Ajoutez des phases avec des dates dans le projet Secteams.",
+    "phasesHint": "Montrant les phases Secteams de ce projet avec leurs dates réelles. Les clients les voient. Basculez vers Définir manuellement pour ajouter vos propres jalons.",
     "sourceFailed": "La source du jalon n'a pas pu être modifiée.",
     "sourceLabel": "Source jalon",
     "sourceManual": "Régler manuellement",
@@ -216,7 +216,7 @@
   "overview": {
     "allowUploads": "Autoriser les téléchargements de clients",
     "allowUploadsHint": "Les administrateurs clients et les membres clients peuvent ajouter des fichiers dans ce projet. Les téléspectateurs clients ne le peuvent jamais.",
-    "datesFromWorklenz": "Tiré du projet WorkLenz. Basculez la progression sur Définir manuellement pour saisir les dates ici.",
+    "datesFromWorklenz": "Tiré du projet Secteams. Basculez la progression sur Définir manuellement pour saisir les dates ici.",
     "expectedCompletion": "Achèvement prévu",
     "expectedCompletionHint": "Laissez vide et le portail affiche « Non défini » au lieu d'inventer une date.",
     "infoTitle": "Informations sur le projet destinées au client",
@@ -238,8 +238,8 @@
     "progressManualHint": "Fixé à la main. Cela ne changera pas une fois les tâches terminées.",
     "progressSource": "Source de progression",
     "progressValue": "Pourcentage de progression",
-    "progressWorklenz": "Progrès de WorkLenz",
-    "progressWorklenzHint": "Lisez l'avancement de WorkLenz du projet ({{value}}%). Il se met à jour au fur et à mesure que les tâches sont terminées.",
+    "progressWorklenz": "Progrès de Secteams",
+    "progressWorklenzHint": "Lisez l'avancement de Secteams du projet ({{value}}%). Il se met à jour au fur et à mesure que les tâches sont terminées.",
     "publish": "Publier la mise à jour",
     "publishAudience": "Visible par chaque utilisateur client sur ce projet",
     "publishFailed": "La mise à jour n'a pas pu être publiée.",
@@ -305,7 +305,7 @@
     "filterInternal": "Interne uniquement ({{count}})",
     "filterLabel": "Filtrer les tâches par visibilité",
     "hidden": "Caché",
-    "intro": "Les tâches sont gérées dans WorkLenz comme d'habitude. Chaque tâche est interne uniquement jusqu'à ce que vous la partagiez.",
+    "intro": "Les tâches sont gérées dans Secteams comme d'habitude. Chaque tâche est interne uniquement jusqu'à ce que vous la partagiez.",
     "search": "Rechercher des tâches…",
     "status": {
       "done": "Terminé",

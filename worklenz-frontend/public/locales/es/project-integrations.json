@@ -17,7 +17,7 @@
     "selectNotificationsPlaceholder": "Seleccionar tipos de notificación...",
     "refresh": "Actualizar",
     "addButton": "Agregar Integración",
-    "inviteBotTip": "Consejo: ¡Asegúrate de invitar al bot @Worklenz a tu canal de Slack primero!"
+    "inviteBotTip": "Consejo: ¡Asegúrate de invitar al bot @Secteams a tu canal de Slack primero!"
   },
   "teams": {
     "title": "Equipos de Microsoft",

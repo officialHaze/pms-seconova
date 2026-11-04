@@ -163,7 +163,7 @@ export const PortalPreviewShell = ({
                 borderTop: `1px solid ${token.colorBorderSecondary}`,
               }}
             >
-              {t('nav.poweredBy', { defaultValue: 'Powered by Worklenz' })}
+              {t('nav.poweredBy', { defaultValue: 'Powered by Secteams' })}
             </div>
           )}
         </main>

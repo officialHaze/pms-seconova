@@ -252,7 +252,7 @@ export const GithubProjectRepositories = ({
           message={t('notConfigured.title', { defaultValue: 'Not configured' })}
           description={t('notConfigured.description', {
             defaultValue:
-              'The GitHub App has not been set up for this Worklenz installation. Ask your administrator to configure it.',
+              'The GitHub App has not been set up for this Secteams installation. Ask your administrator to configure it.',
           })}
         />
       );

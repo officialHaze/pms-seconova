@@ -57,7 +57,7 @@ const POST_CHECKOUT_REFRESH_STEPS_MS = [3000, 6000];
 const MAX_SEATS = 10000;
 const FREE_USER_LIMIT = 5;
 const MOST_POPULAR_KEY = 'pro';
-const SALES_MAILTO = 'mailto:info@worklenz.com?subject=Enterprise%20Plan%20Inquiry';
+const SALES_MAILTO = 'mailto:developer@seconova.ai?subject=Enterprise%20Plan%20Inquiry';
 
 interface PerUserUpgradePlansProps {
   data: IPerUserPlansResponse;

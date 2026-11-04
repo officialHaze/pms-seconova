@@ -1,6 +1,6 @@
-# Worklenz - React Frontend
+# Secteams - React Frontend
 
-Worklenz is a project management application built with React, TypeScript, and Ant Design. The project is bundled using [Vite](https://vitejs.dev/).
+Secteams is a project management application built with React, TypeScript, and Ant Design. The project is bundled using [Vite](https://vitejs.dev/).
 
 ## Table of Contents
 

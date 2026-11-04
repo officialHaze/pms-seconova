@@ -454,7 +454,7 @@ const AccountSetup: React.FC = () => {
       {/* Header: logo + step indicator */}
       <div className="wiz-header">
         <div className="wiz-logo">
-          <img src={isDarkMode ? logoDark : logo} alt="Worklenz" style={{ height: 26 }} />
+          <img src={isDarkMode ? logoDark : logo} alt="Secteams" style={{ height: 26 }} />
           <span style={{ fontSize: 12.5, color: token.colorTextSecondary }}>
             · {t('setupYourAccount')}
           </span>

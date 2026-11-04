@@ -42,7 +42,7 @@ const AuthLayout = () => {
       {showFixedLogo && (
         <img
           src={logoSrc}
-          alt="Worklenz"
+          alt="Secteams"
           style={{
             position: 'fixed',
             top: 24,

@@ -239,7 +239,7 @@
   "inviteLinkGeneratedCopyFailed": "Invitation link generated, but could not be copied automatically. Please copy it manually.",
   "noManagedProjectsFound": "No projects where you are Project Manager",
   "projectInvite_guestLimitExceeded": "Guest limit exceeded for this plan. Please upgrade to add more guests.",
-  "license-expired-subtitle": "Your Worklenz subscription has ended. Please renew to continue enjoying all features.",
+  "license-expired-subtitle": "Your Secteams subscription has ended. Please renew to continue enjoying all features.",
   "Failed to fetch job titles": "Failed to fetch job titles",
   "assign_team_lead": "Assign team lead"
 }

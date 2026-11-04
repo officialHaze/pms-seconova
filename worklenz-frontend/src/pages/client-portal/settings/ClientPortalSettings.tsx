@@ -463,7 +463,7 @@ const ClientPortalSettings = () => {
               style={{ marginBottom: 16 }}
               message={t('brandingBusinessOnly', {
                 defaultValue:
-                  'Portal logo, colors and removing the Worklenz footer are available on the Business plan.',
+                  'Portal logo, colors and removing the Secteams footer are available on the Business plan.',
               })}
             />
           )}

@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "Facturas",
-        "description": "Genere, envíe y realice un seguimiento de las facturas de los clientes sin salir de Worklenz.",
+        "description": "Genere, envíe y realice un seguimiento de las facturas de los clientes sin salir de Secteams.",
         "features": [
           "Cree facturas a partir del seguimiento del tiempo y los gastos",
           "Seguimiento de facturas pagadas, pendientes y vencidas",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "Facturas",
-        "description": "Cree, envíe y realice un seguimiento de las facturas de los clientes sin salir de Worklenz.",
+        "description": "Cree, envíe y realice un seguimiento de las facturas de los clientes sin salir de Secteams.",
         "features": [
           "Cree facturas a partir del seguimiento del tiempo y los gastos",
           "Seguimiento de facturas pagadas, pendientes y vencidas",

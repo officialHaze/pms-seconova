@@ -91,7 +91,7 @@ function IntegrationsSettings() {
           title={t('teams.title', { defaultValue: 'Microsoft Teams' })}
           description={t('teams.description', {
             defaultValue:
-              'Integrate Microsoft Teams with your Worklenz team to receive real-time notifications, create tasks from Teams, and keep your team synchronized across both platforms.',
+              'Integrate Microsoft Teams with your Secteams team to receive real-time notifications, create tasks from Teams, and keep your team synchronized across both platforms.',
           })}
           available={false}
         />

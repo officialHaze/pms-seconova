@@ -55,7 +55,7 @@
       },
       "invoices": {
         "title": "Faturat",
-        "description": "Gjeneroni, dërgoni dhe gjurmoni faturat e klientit pa u larguar nga Worklenz.",
+        "description": "Gjeneroni, dërgoni dhe gjurmoni faturat e klientit pa u larguar nga Secteams.",
         "features": [
           "Krijoni fatura nga koha dhe shpenzimet e gjurmuara",
           "Gjurmo faturat e paguara, në pritje dhe të vonuara",
@@ -149,7 +149,7 @@
       },
       "invoices": {
         "title": "Faturat",
-        "description": "Krijoni, dërgoni dhe gjurmoni faturat e klientit pa u larguar nga Worklenz.",
+        "description": "Krijoni, dërgoni dhe gjurmoni faturat e klientit pa u larguar nga Secteams.",
         "features": [
           "Krijoni fatura nga koha dhe shpenzimet e gjurmuara",
           "Gjurmo faturat e paguara, në pritje dhe të vonuara",

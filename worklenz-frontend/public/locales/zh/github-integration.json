@@ -15,7 +15,7 @@
   },
   "notConfigured": {
     "title": "未配置",
-    "description": "此 Worklenz 部署尚未设置 GitHub 应用。请联系管理员进行配置。"
+    "description": "此 Secteams 部署尚未设置 GitHub 应用。请联系管理员进行配置。"
   },
   "actions": {
     "retry": "重试",
@@ -37,7 +37,7 @@
   "errors": {
     "invalidState": "连接请求已过期，请重试。",
     "forbidden": "您需要拥有此 GitHub 安装的访问权限，并且是团队所有者或管理员。",
-    "alreadyConnected": "此 GitHub 账号已连接到另一个 Worklenz 团队。",
+    "alreadyConnected": "此 GitHub 账号已连接到另一个 Secteams 团队。",
     "teamAlreadyConnected": "此团队已连接到其他 GitHub 账号，请先断开连接。",
     "connectFailed": "无法连接 GitHub，请重试。",
     "loadFailed": "无法加载 GitHub 状态。",

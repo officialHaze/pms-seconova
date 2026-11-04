@@ -444,7 +444,7 @@ export const CsvMappingStepsContent: React.FC<CsvMappingStepsContentProps> = ({
         <Typography.Text style={{ color: palette.textSecondary, display: 'block', marginBottom: 12 }}>
           {t('importStep.customColumnHint', {
             defaultValue:
-              'Need a custom column? Type a new name in the Worklenz field box while mapping.',
+              'Need a custom column? Type a new name in the Secteams field box while mapping.',
           })}
         </Typography.Text>
 
@@ -499,7 +499,7 @@ export const CsvMappingStepsContent: React.FC<CsvMappingStepsContentProps> = ({
           >
             <span style={{ flex: 2, paddingLeft: 8 }}>Columns in CSV</span>
             <span style={{ flex: 2 }}>
-              {t('importStep.worklenzFields', { defaultValue: 'Worklenz fields' })}
+              {t('importStep.worklenzFields', { defaultValue: 'Secteams fields' })}
             </span>
             <span style={{ width: 140, textAlign: 'center' }}>
               {t('importStep.includeInImport', { defaultValue: 'Include in import' })}
@@ -623,7 +623,7 @@ export const CsvMappingStepsContent: React.FC<CsvMappingStepsContentProps> = ({
         <Typography.Paragraph style={{ color: palette.textSecondary, marginBottom: 16 }}>
           {t(
             'importStep.mapValuesHelp',
-            'Build more structure into your space by mapping values in your Status column to Worklenz statuses.'
+            'Build more structure into your space by mapping values in your Status column to Secteams statuses.'
           )}{' '}
           <a
             href={WORKLENZ_STATUS_DOCS_URL}
@@ -684,7 +684,7 @@ export const CsvMappingStepsContent: React.FC<CsvMappingStepsContentProps> = ({
           <span style={{ flex: 1 }}></span>
           <span style={{ flex: 2, display: 'flex', alignItems: 'center' }}>
             <TableOutlined style={{ marginRight: 8, color: palette.primary }} />
-            {t('importStep.worklenzWorkTypes', { defaultValue: 'Worklenz statuses' })}
+            {t('importStep.worklenzWorkTypes', { defaultValue: 'Secteams statuses' })}
           </span>
         </div>
 
@@ -738,7 +738,7 @@ export const CsvMappingStepsContent: React.FC<CsvMappingStepsContentProps> = ({
     return (
       <div style={{ width: '100%' }}>
         <Typography.Title level={3} style={{ color: palette.text, marginBottom: 16 }}>
-          {t('importStep.moveUsersToWorklenz', { defaultValue: 'Move users to Worklenz' })}
+          {t('importStep.moveUsersToWorklenz', { defaultValue: 'Move users to Secteams' })}
         </Typography.Title>
 
         {noUsers ? (
@@ -806,7 +806,7 @@ export const CsvMappingStepsContent: React.FC<CsvMappingStepsContentProps> = ({
               <span style={{ flex: 3 }}>
                 <UserAddOutlined style={{ marginRight: 8 }} />
                 {t('importStep.usersMovingToWorklenz', {
-                  defaultValue: 'Users moving to Worklenz ({{count}})',
+                  defaultValue: 'Users moving to Secteams ({{count}})',
                   count: usersMovingCount,
                 })}
               </span>

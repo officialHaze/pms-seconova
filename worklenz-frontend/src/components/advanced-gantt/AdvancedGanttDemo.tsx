@@ -652,7 +652,7 @@ const AdvancedGanttDemo: React.FC = () => {
               <ul className="space-y-1 text-gray-600 dark:text-gray-400">
                 <li>• Dark/Light theme support</li>
                 <li>• Tailwind CSS styling</li>
-                <li>• Consistent with Worklenz</li>
+                <li>• Consistent with Secteams</li>
                 <li>• Accessibility features</li>
                 <li>• Mobile responsive</li>
               </ul>
