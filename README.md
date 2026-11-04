@@ -4,55 +4,19 @@
         <img src="https://res.cloudinary.com/wbk7fal0/image/upload/v1793366772/logo-1779888390748-40070765.png" alt="Seconova Logo" width="400">
     </a>
 </h1>
-<h3 align="center">All-in-one open-source project management for efficient teams</h3>
-
-<!-- <p align="center"> -->
-<!--     <a href="https://github.com/Worklenz/worklenz/blob/main/LICENSE"> -->
-<!--         <img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"> -->
-<!--     </a> -->
-<!--     <a href="https://github.com/Worklenz/worklenz/releases"> -->
-<!--         <img src="https://img.shields.io/github/v/release/Worklenz/worklenz" alt="Release"> -->
-<!--     </a> -->
-<!--     <a href="https://github.com/Worklenz/worklenz/stargazers"> -->
-<!--         <img src="https://img.shields.io/github/stars/Worklenz/worklenz" alt="Stars"> -->
-<!--     </a> -->
-<!--     <a href="https://github.com/Worklenz/worklenz/network/members"> -->
-<!--         <img src="https://img.shields.io/github/forks/Worklenz/worklenz" alt="Forks"> -->
-<!--     </a> -->
-<!--     <a href="https://github.com/Worklenz/worklenz/issues"> -->
-<!--         <img src="https://img.shields.io/github/issues/Worklenz/worklenz" alt="Issues"> -->
-<!--     </a> -->
-<!--     <a href="https://discord.com/invite/6Qmm839mgr"> -->
-<!--         <img src="https://img.shields.io/discord/1202616582757556276?style=flat&logo=discord&logoColor=white&label=Discord&color=5865F2" alt="Discord"> -->
-<!--     </a> -->
-<!-- </p> -->
-
-<!-- <p align="center"> -->
-<!--     <a href="https://worklenz.com"><b>Website</b></a> • -->
-<!--     <a href="https://app.worklenz.com/auth/signup"><b>Sign in</b></a> • -->
-<!--     <a href="https://docs.worklenz.com/en/start/introduction/"><b>Documentation</b></a> -->
-<!-- </p> -->
-
+<h3 align="center">All-in-one open-source project management for SECONOVA teams</h3>
 </div>
 
 ---
-
-<!-- Meet [Worklenz](https://worklenz.com), a powerful, open-source project management platform built to help teams plan smarter, collaborate better, and ship faster. No bloated tools. No unnecessary complexity. Just everything your team needs, in one place. 🚀 -->
-<!---->
-<!-- > Worklenz is growing every day. Your bug reports, feature ideas, and feedback shape what we build next. Jump into [Discord](https://discord.com/invite/6Qmm839mgr) or open a GitHub issue - we read everything! -->
 
 ## 🚀 Getting Started
 
 Pick the setup that works best for you:
 <br>
 
-<!-- ### ☁️ Worklenz Cloud -->
-<!---->
-<!-- The fastest way to get started - no setup, no infrastructure. Just sign up at [worklenz.com](https://worklenz.com) and start managing projects in minutes. -->
-
 ### 🖥️ Self-Host
 
-Prefer full control over your data? Run Worklenz on your own server.
+Prefer full control over your data? Run Secteams on your own server.
 
 | Method                  | Guide                                     |
 | ----------------------- | ----------------------------------------- |
@@ -138,14 +102,14 @@ _**Client Portal**_
 
 ## 📝 Documentation
 
-Explore Worklenz's [product documentation](https://docs.worklenz.com/en/start/introduction/) to learn about features, setup, and usage and more.
+Explore Secteams's [product documentation](https://docs.worklenz.com/en/start/introduction/) to learn about features, setup, and usage and more.
 <br>
 
 <a id="quick-start-docker"></a>
 
 ### 🐳 Quick Start (Docker — Recommended)
 
-The fastest way to get Worklenz running locally with all dependencies included. This setup includes **production-ready features** like nginx reverse proxy, SSL/TLS support, Redis caching, and automated backups.
+The fastest way to get Secteams running locally with all dependencies included. This setup includes **production-ready features** like nginx reverse proxy, SSL/TLS support, Redis caching, and automated backups.
 
 **📋 Prerequisites:**
 
@@ -158,7 +122,7 @@ The fastest way to get Worklenz running locally with all dependencies included. 
 
 ```bash
 # 📥 Clone the repository
-git clone https://github.com/Worklenz/worklenz.git
+git clone https://github.com/Secteams/worklenz.git
 cd worklenz
 
 # Run the automated setup script
@@ -176,7 +140,7 @@ This script will:
 
 ```bash
 # 📥 Clone the repository
-git clone https://github.com/Worklenz/worklenz.git
+git clone https://github.com/Secteams/worklenz.git
 cd worklenz
 
 # 📄 Copy and configure environment file
@@ -225,10 +189,10 @@ server that does not use Docker.
 1. 📥 Clone the repository:
 
 ```bash
-# Open a terminal and navigate to the directory where you want to clone Worklenz.
+# Open a terminal and navigate to the directory where you want to clone Secteams.
 cd /path/to/your/projects
 
-git clone https://github.com/Worklenz/worklenz.git
+git clone https://github.com/Secteams/worklenz.git
 cd worklenz
 git switch main
 ```
@@ -251,7 +215,7 @@ Email invitations use the SMTP relay you configure in
 
 ```env
 EMAIL_PROVIDER=smtp
-EMAIL_FROM="Worklenz <noreply@your-domain.com>"
+EMAIL_FROM="Secteams <noreply@your-domain.com>"
 SMTP_HOST=smtp.your-provider.com
 SMTP_PORT=587
 SMTP_SECURE=false
@@ -278,18 +242,19 @@ npm install
 4. 🗄️ Set up the database:
 
 ```bash
-# Create a PostgreSQL database named worklenz_db
+# Create a PostgreSQL database named secteams_db
 cd worklenz-backend
 
 # Execute the SQL setup files in the correct order
-psql -U your_username -d worklenz_db -f database/sql/0_extensions.sql
-psql -U your_username -d worklenz_db -f database/sql/1_tables.sql
-psql -U your_username -d worklenz_db -f database/sql/indexes.sql
-psql -U your_username -d worklenz_db -f database/sql/4_functions.sql
-psql -U your_username -d worklenz_db -f database/sql/triggers.sql
-psql -U your_username -d worklenz_db -f database/sql/3_views.sql
-psql -U your_username -d worklenz_db -f database/sql/2_dml.sql
-psql -U your_username -d worklenz_db -f database/sql/5_database_user.sql
+psql -U your_username -d secteams_db -f database/sql/0_extensions.sql
+psql -U your_username -d secteams_db -f database/sql/1_tables.sql
+psql -U your_username -d secteams_db -f database/sql/indexes.sql
+psql -U your_username -d secteams_db -f database/sql/4_functions.sql
+psql -U your_username -d secteams_db -f database/sql/triggers.sql
+psql -U your_username -d secteams_db -f database/sql/3_views.sql
+psql -U your_username -d secteams_db -f database/sql/2_dml.sql
+psql -U your_username -d secteams_db -f database/sql/5_database_user.sql
+psql -U your_username -d secteams_db -f database/sql/6_org_wk_days_table.sql
 
 # Apply versioned migrations after the base schema is initialized
 npm run migrate:up
@@ -361,7 +326,7 @@ The new Docker setup includes production-ready features for secure and scalable 
 
 ```bash
 # Clone and navigate to the repository
-git clone https://github.com/Worklenz/worklenz.git
+git clone https://github.com/Secteams/worklenz.git
 cd worklenz
 
 # Run the automated setup
@@ -422,13 +387,13 @@ cd worklenz
 
 **For complete deployment documentation**, see [DOCKER_SETUP.md](DOCKER_SETUP.md)
 
-**Video Guide**: For a complete walkthrough of deploying Worklenz to a remote server, check out our [deployment video guide](https://www.youtube.com/watch?v=CAZGu2iOXQs&t=10s).
+**Video Guide**: For a complete walkthrough of deploying Secteams to a remote server, check out our [deployment video guide](https://www.youtube.com/watch?v=CAZGu2iOXQs&t=10s).
 
 ## ⚙️ Configuration
 
 ### Environment Variables
 
-Worklenz uses a comprehensive environment configuration system. Copy `.env.example` to `.env` and configure according to your needs.
+Secteams uses a comprehensive environment configuration system. Copy `.env.example` to `.env` and configure according to your needs.
 
 **📂 Key Configuration Areas:**
 
@@ -481,7 +446,7 @@ The Docker setup uses SeaweedFS as its bundled S3-compatible object storage serv
 
 ### 🔧 Working with SeaweedFS
 
-SeaweedFS exposes an S3-compatible API on port `8333`. Worklenz uses a private container endpoint for API calls and a separate public bucket URL for attachment links.
+SeaweedFS exposes an S3-compatible API on port `8333`. Secteams uses a private container endpoint for API calls and a separate public bucket URL for attachment links.
 
 - **🖥️ S3 API**: http://localhost:8333
 - **Access key**: configured with `S3_ACCESS_KEY_ID`
@@ -511,7 +476,7 @@ export const S3_SECRET_ACCESS_KEY = process.env.S3_SECRET_ACCESS_KEY || "";
 
 ## 🔒 Security
 
-Worklenz is built with security in mind:
+Secteams is built with security in mind:
 
 - 🔐 Non-root Docker containers
 - 🌐 Network isolation (backend is internal-only)
@@ -520,12 +485,12 @@ Worklenz is built with security in mind:
 - 🔒 Security headers (HSTS, CSP, X-Frame-Options, etc.)
 - 🗝️ Auto-generated secure secrets via `openssl rand -hex 32`
 
-Found a security vulnerability? Please **do not** open a public issue. Email us at [info@worklenz.com](mailto:info@worklenz.com) instead. We take all legitimate reports seriously.
+Found a security vulnerability? Please **do not** open a public issue. Email us at [developer@seconova.ai](mailto:developer@seconova.ai) instead.
 <br>
 
 ## 📈 Analytics
 
-Worklenz uses Google Analytics, Mixpanel, and Microsoft Clarity to understand how the application is used - helping us prioritize improvements and make smarter product decisions.
+Secteams uses Google Analytics, Mixpanel, and Microsoft Clarity to understand how the application is used - helping us prioritize improvements and make smarter product decisions.
 
 **What we track:**
 
@@ -543,46 +508,8 @@ Worklenz uses Google Analytics, Mixpanel, and Microsoft Clarity to understand ho
 
 ## 🤝 Contributing
 
-We love contributions from the community! Here's how you can help:
-
-- 🐛 [Report bugs](https://github.com/Worklenz/worklenz/issues/new)
-- ✨ [Request features](https://github.com/Worklenz/worklenz/issues/new)
-- 📖 Improve the documentation
-- 💬 Share Worklenz with your team or write about it
-
-Please read [CONTRIBUTING.md](https://github.com/Worklenz/worklenz/blob/main/CONTRIBUTING.md) before submitting a pull request.
-<br>
-
-## Contributors
-
-Thanks to everyone who has contributed to Worklenz! 💙
-
-[![Contributors](https://contrib.rocks/image?repo=Worklenz/worklenz)](https://github.com/Worklenz/worklenz/graphs/contributors)
-<br>
-
-## 💙 Community
-
-Join the Worklenz community:
-
-- 💬 [Discord Server](https://discord.gg/6Qmm839mgr) - chat with contributors and users
-- 🐙 [GitHub Discussions](https://github.com/Worklenz/worklenz/discussions) - longer form conversations
-- 🐦 Follow updates on our [website](https://worklenz.com)
-
-We follow a [Code of Conduct](https://github.com/Worklenz/worklenz/blob/main/CODE_OF_CONDUCT.md) across all community spaces.
-<br>
+Contributions are locked to SECONOVA internal team members only. To contribute to the original project, kindly navigate to [Worklenz](https://github.com/Worklenz/worklenz)
 
 ## 📄 License
 
-Worklenz is open source, released under the [GNU Affero General Public License v3.0](https://github.com/Worklenz/worklenz/blob/main/LICENSE).
-
-By contributing to Worklenz, you agree your contributions will be licensed under AGPL v3.0.
-<br>
-
----
-
-<br>
-<div align="center">
-  <strong>Built with 💙 by the Worklenz team and amazing contributors around the world.</strong>
-  <br/>
-  <a href="https://worklenz.com">www.worklenz.com</a>
-</div>
+Secteams is open source, released under the [GNU Affero General Public License v3.0](https://github.com/officialHaze/pms-seconova?tab=AGPL-3.0-1-ov-file).
