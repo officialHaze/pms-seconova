@@ -348,7 +348,15 @@ async function uploadBufferToS3(
 
     await s3Client.send(new PutObjectCommand(bucketParams));
 
-    return `${S3_URL}/${location}`;
+    const command = new GetObjectCommand({
+      Bucket: BUCKET,
+      Key: location
+    })
+
+    const url = await getSignedUrl(presignS3Client, command, {expiresIn: 3600})
+
+    // return `${S3_URL}/${location}`;
+    return url
   } catch (error) {
     log_error(error);
     return null;

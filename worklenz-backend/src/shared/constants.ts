@@ -30,7 +30,7 @@ export const LOG_DESCRIPTIONS = {
 // I18n-compatible log keys and parameters
 export const LOG_I18N_KEYS = {
   PROJECT_CREATED: "activityLogs.project.created",
-  PROJECT_UPDATED: "activityLogs.project.updated", 
+  PROJECT_UPDATED: "activityLogs.project.updated",
   PROJECT_DELETED: "activityLogs.project.deleted",
   PROJECT_ARCHIVED: "activityLogs.project.archived",
   PROJECT_UNARCHIVED: "activityLogs.project.unarchived",
@@ -175,9 +175,9 @@ export const DEFAULT_PAGE_SIZE = 20;
 
 // S3 Credentials
 export const REGION = process.env.S3_REGION || process.env.AWS_REGION;
-export const BUCKET = process.env.S3_BUCKET || process.env.AWS_BUCKET || "your-bucket-name";
+export const BUCKET = process.env.S3_BUCKET || process.env.AWS_BUCKET || "s3-secteams-bucket";
 export const S3_ENDPOINT = process.env.S3_ENDPOINT;
-export const S3_URL = process.env.S3_PUBLIC_URL || process.env.S3_URL || "https://your-s3-url";
+export const S3_URL = process.env.S3_PUBLIC_URL || process.env.S3_URL || "http://localhost:8333";
 export const S3_ACCESS_KEY_ID = process.env.S3_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID || "";
 export const S3_SECRET_ACCESS_KEY = process.env.S3_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY || "";
 

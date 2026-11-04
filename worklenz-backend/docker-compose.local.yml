@@ -10,6 +10,7 @@ services:
     ports:
       - ${PORT}:${PORT}
     volumes:
+      - .:/backend/
       - ./.env:/backend/.env:ro
     dns:
       - 8.8.8.8
