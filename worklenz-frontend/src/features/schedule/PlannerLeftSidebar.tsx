@@ -58,11 +58,11 @@ interface HelpQuickLink {
 }
 
 const HELP_QUICK_LINKS: HelpQuickLink[] = [
-  {
-    label: 'Documentation',
-    icon: <ReadOutlined />,
-    onClick: () => window.open('https://docs.worklenz.com/en/start/introduction/', '_blank'),
-  },
+  // {
+  //   label: 'Documentation',
+  //   icon: <ReadOutlined />,
+  //   onClick: () => window.open('', '_blank'),
+  // },
   {
     label: 'Support Email',
     icon: <MailOutlined />,

@@ -6,7 +6,7 @@
 class AnalyticsManager {
   constructor() {
     this.isProduction = window.location.hostname === 'app.worklenz.com';
-    this.trackingId = this.isProduction ? 'G-7KSRKQ1397' : 'G-3LM2HGWEXG';
+    this.trackingId = this.isProduction ? '' : '';
   }
 
   /**
