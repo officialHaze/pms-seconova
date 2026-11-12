@@ -428,7 +428,7 @@ export default class AttachmentController extends WorklenzControllerBase {
       "UPDATE users SET avatar_url = $2, updated_at = CURRENT_TIMESTAMP WHERE id = $1 RETURNING avatar_url, updated_at;";
     const result = await db.query(q, [
       req.user?.id,
-      s3Url,
+      `${s3Url}?v=${smallId(4)}`
     ]);
     const [data] = result.rows;
     if (!data)
