@@ -1,5 +1,5 @@
 {
-  "name": "worklenz",
+  "name": "secteams",
   "version": "3.0.0",
   "private": true,
   "scripts": {
@@ -86,8 +86,7 @@
     "react-window": "^1.8.11",
     "react-window-infinite-loader": "^1.0.10",
     "socket.io-client": "^4.8.1",
-    "web-vitals": "^4.2.4",
-    "worklenz": "file:"
+    "web-vitals": "^4.2.4"
   },
   "devDependencies": {
     "@sentry/vite-plugin": "^4.9.1",

@@ -52,9 +52,9 @@ const AddMembersDropdown: React.FC = () => {
                 flexDirection: 'column',
               }}
             >
-              <Typography.Text>Raveesha Dilanka</Typography.Text>
+              <Typography.Text>Seconova Developer</Typography.Text>
               <Typography.Text type="secondary" style={{ fontSize: '80%' }}>
-                raveeshadilanka1999@gmail.com
+                developer@seconova.ai
               </Typography.Text>
             </div>
           </div>
