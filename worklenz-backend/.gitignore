@@ -67,6 +67,4 @@ dist-sdk
 keys/*.p8
 
 !.env.docker.example
-docker-compose.*.yml
-docker-compose.yml
 !docker-compose.local.yml

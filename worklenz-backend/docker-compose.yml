@@ -1,0 +1,22 @@
+services:
+  pms-seconova-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pms-seconova-backend-${NODE_ENV}
+    env_file:
+      - .env
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - ./.env:/backend/build/.env:ro
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    networks:
+      - kakushibe_ikki
+    restart: unless-stopped
+
+networks:
+  kakushibe_ikki:
+    external: true
