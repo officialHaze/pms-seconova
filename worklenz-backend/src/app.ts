@@ -219,21 +219,6 @@ app.use(cors({
 // Handle preflight requests
 app.options("*", cors());
 
-app.use((_, res, next) => {
-    const originalSend = res.send;
-    res.send = function (body) {
-        // If it's an object/array and Content-Type isn't set, force JSON
-        if (body && (typeof body === 'object' || Array.isArray(body))) {
-            if (!res.getHeader('Content-Type')) {
-                res.setHeader('Content-Type', 'application/json; charset=utf-8');
-            }
-            return originalSend.call(this, JSON.stringify(body));
-        }
-        return originalSend.call(this, body);
-    };
-    next();
-});
-
 // The middleware can be re-enabled for monitoring if needed, but blocking is no longer necessary
 // if (isProduction()) {
 //   app.use(sqlInjectionDetectorWithBlocking);
