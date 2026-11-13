@@ -10,6 +10,11 @@ export default defineConfig(({ command, mode }) => {
   const buildTimestamp = Date.now().toString();
 
   const env = loadEnv(mode, process.cwd(), '');
+
+  // const allowedHosts = env.VITE_ALLOWED_HOSTS
+  // ? env.VITE_ALLOWED_HOSTS.split(',').map(h => h.trim()).filter(Boolean)
+  // : [];
+
   const hasSentryToken = Boolean(env.VITE_SENTRY_AUTH_TOKEN);
   const shouldGenerateSourcemap =
     hasSentryToken || env.VITE_GENERATE_SOURCEMAP === 'true';
@@ -191,6 +196,15 @@ export default defineConfig(({ command, mode }) => {
           ws: true,
         },
       },
+    },
+
+    // **Preview**
+    preview: {
+      allowedHosts: env.VITE_ALLOWED_HOSTS
+        ? env.VITE_ALLOWED_HOSTS.split(',')
+            .map(host => host.trim())
+            .filter(Boolean)
+        : [],
     },
 
     // **Build**
