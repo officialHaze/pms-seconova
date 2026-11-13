@@ -102,8 +102,8 @@ if [ -d "$MIGRATIONS_DIR" ] && compgen -G "$MIGRATIONS_DIR/*.sql" >/dev/null; th
     version=$(basename "$f")
     if ! psql -h "$MIGRATION_DB_HOST" -p $DB_PORT -U "$DB_USER" -d "$DB_NAME" -tAc "SELECT 1 FROM schema_migrations WHERE version = '$version'" | grep -q 1; then
       echo "Applying migration: $version"
-      psql -h "$MIGRATION_DB_HOST" -U "$DB_USER" -d "$DB_NAME" -f "$f"
-      psql -h "$MIGRATION_DB_HOST" -U "$DB_USER" -d "$DB_NAME" -c "INSERT INTO schema_migrations (version) VALUES ('$version');"
+      psql -h "$MIGRATION_DB_HOST" -p $DB_PORT -U "$DB_USER" -d "$DB_NAME" -f "$f"
+      psql -h "$MIGRATION_DB_HOST" -p $DB_PORT -U "$DB_USER" -d "$DB_NAME" -c "INSERT INTO schema_migrations (version) VALUES ('$version');"
     else
       echo "Skipping already applied migration: $version"
     fi
