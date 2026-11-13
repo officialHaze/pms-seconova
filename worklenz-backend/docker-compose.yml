@@ -15,8 +15,11 @@ services:
       - 1.1.1.1
     networks:
       - kakushibe_ikki
+      - secveil
     restart: unless-stopped
 
 networks:
   kakushibe_ikki:
+    external: true
+  secveil:
     external: true
